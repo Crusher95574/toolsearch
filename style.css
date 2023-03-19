@@ -1,0 +1,160 @@
+@font-face {
+  font-family: sofia;
+  src: url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+}
+
+
+
+ul {
+  position:fixed;
+  list-style-type: none;
+  width:100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+body {
+  background: #F0F0F0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.card-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  border-radius: 1px;
+  flex-flow: row wrap;
+}
+
+.card-container:hover .card {
+  opacity: .7;
+  cursor: pointer;
+  filter: grayscale(1);
+}
+
+.card-container .card {
+  margin: 10px;
+  width: calc(100% / 3 - 20px);
+  float: left;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, .05);
+  background: #FFF;
+  -webkit-transition: .3s all ease;
+  transition: .15s all ease;
+}
+
+.card-container .card:hover {
+  box-shadow: 0 0 8px 3px rgba(0, 0, 0, .15);
+  transform: scale(1.025);
+  opacity: 1;
+  filter: grayscale(0);
+  transition: .35s all ease;
+}
+
+.card-container .card img {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.card-container .card .content {
+  padding: 15px 20px;
+}
+
+.card-container .card h3 {
+  font: 2.8rem/3.4rem 'Bree Serif', serif;
+  padding: 0;
+  margin: 0 0 10px;
+  letter-spacing: -.075rem
+}
+
+.card-container .card p {
+  color: #888;
+  padding: 0;
+  margin: 0;
+  font: 400 1.6rem/2.2rem 'Open Sans script=all', sans-serif;
+}
+
+h1 {
+  color: var(--heading);
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+p {
+  color: var(--para);
+  line-height: 1;
+  font-size: 1.7rem;
+}
+
+.api {
+  padding: 6rem 6rem;
+}
+.container {
+  max-width: 180rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  gap: 9rem;
+}
+
+.grid-two-column {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section-hero {
+  background-color: var(--bg);
+}
+
+.section-hero-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-top-data {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--helper);
+}
+.hero-heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 6.4rem;
+  margin-bottom: 2rem;
+}
+.hero-para {
+  margin-top:0rem;
+  margin-bottom: 5rem;
+  max-width: 50rem;
+}
+
+.section-hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-img {
+  max-width: 100%;
+}

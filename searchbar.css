@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+.searchbar{
+    background: #3e5669;
+    position: absolute;
+    top:78%;
+    transform: translate(-50% -50%);
+    margin-top: 5px;
+    margin-left: 540px;
+    margin-right: 540px;
+    margin-bottom: 5px;
+    border-radius: 50px;
+}
+input{
+    border: 3px solid #333;
+    height: 30px;
+    width: 400px;
+    border-radius: 50px;
+    padding: 0px 10px;
+    
+}
+

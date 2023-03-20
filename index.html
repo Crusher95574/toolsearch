@@ -8,8 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hacking Tools</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-
+    <link rel="stylesheet" href="table.css" />
+    <link rel="stylesheet" type="text/css" href="searchbar.css">
+   
+   
 </head>
 
 <body>
@@ -27,42 +29,68 @@
     <section class="home">
         <div class="homeImg">
             <img
-            src="https://cdn.discordapp.com/attachments/1008571091616276541/1087137638953259178/crusher_web_security_web_hacking_skull._image_looking_in_front_1fa2e6a8-af1a-4ca9-ba46-14eb247162d1.png"
+            src="https://tecdn.b-cdn.net/img/new/standard/city/041.jpg"
             class="home-img"
             alt="..."
           />
         </div>
     </section>
-       <div class="table" id="section-table">  
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Url</th>
-                <th>Date Created</th>
-              </tr>
-            <tr>
-                <td>Subfinder</td>
-                <td>Fast passive subdomain enumeration tool</td>
-                <td>https://github.com/projectdiscovery/subfinder</td>
-                <td>Date Created</td>
-              </tr>
-              <tr>
-                <td>Httpx</td>
-                <td>Fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library</td>
-                <td>https://github.com/projectdiscovery/httpx</td>
-                <td>Date Created</td>
-              </tr>
-              <tr>
-                <td>Amass</td>
-                <td>In-depth Attack Surface Mapping and Asset Discovery</td>
-                <td>https://github.com/OWASP/Amass</td>
-                <td>Date Created</td>
-              </tr>
-          </table>
-          
-       </div>
-
+    
+    <section class="searchbar">
+        <input type="text" name="box" placeholder="Search Anything You Want..">
+        <a href="#"><i class="fas fa-search"></i></a>
+</section>
+<section class="table_header"><h1>Tools List</h1></section> 
+    <section class="table_main">
+        <section class="table_body" id="table_id">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Stars</th>
+                        <th>Language</th>
+                        <th>Url</th>
+                        <th>Last Updated</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Subfinder</td>
+                        <td>Fast passive subdomain enumeration tool</td>
+                        <td>7.2k ⭐</td>
+                        <td>Go</td>
+                        <td><a href="https://github.com/projectdiscovery/subfinder">subfinder</a></td>
+                        <td>18-Mar-2023</td>
+                    </tr>
+                    <tr>
+                        <td>Httpx</td>
+                        <td>Fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library</td>
+                        <td>4.6k ⭐</td>
+                        <td>Go</td>
+                        <td><a href="https://github.com/projectdiscovery/httpx">httpx</a></td>
+                        <td>15-Mar-2023</td>
+                    </tr>
+                    <tr>
+                        <td>Amass</td>
+                        <td>In-depth Attack Surface Mapping and Asset Discovery</td>
+                        <td>9.0k ⭐</td>
+                        <td>Go,Lua</td>
+                        <td><a href="https://github.com/OWASP/Amass">amass</a></td>
+                        <td>14-Mar-2023</td>
+                    </tr>
+                    <tr>
+                        <td>Httprobe</td>
+                        <td>Take a list of domains and probe for working HTTP and HTTPS servers</td>
+                        <td>2.4k ⭐</td>
+                        <td>Go,Shell,Dockerfile</td>
+                        <td><a href="https://github.com/tomnomnom/httprobe">httprobe</a></td>
+                        <td>09-Jun-2022</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>  
+    </section>
 </body>
 
 </html>

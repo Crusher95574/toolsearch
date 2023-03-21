@@ -7,7 +7,7 @@
             "language": "Go",
             "stars": "7.2k",
             "url": "https://github.com/projectdiscovery/subfinder",
-            "last_updated": "18-Mar-2023",
+            "last_updated": "18/03/23",
             "tags": [
                 "osint",
                 "hacking",
@@ -24,7 +24,7 @@
             "language": "Go",
             "stars": "4.6k",
             "url": "https://github.com/projectdiscovery/httpx",
-            "last_updated": "15-Mar-2023",
+            "last_updated": "15/03/23",
             "tags": [
                 "osint",
                 "cli",
@@ -43,7 +43,7 @@
             "language": "Go,Lua",
             "stars": "9k",
             "url": "https://github.com/OWASP/Amass",
-            "last_updated": "14-Mar-2023",
+            "last_updated": "14/03/23",
             "tags": [
                 "osint",
                 "subdomain",
@@ -62,7 +62,7 @@
             "language": "Go,Shell,DockerFile",
             "stars": "2.4k",
             "url": "https://github.com/tomnomnom/httprobe",
-            "last_updated": "9-Jun-2022",
+            "last_updated": "09/06/22",
             "tags": [
                
             ]
@@ -74,7 +74,7 @@
             "language": "Go,Shell",
             "stars": "1.4k",
             "url": "https://github.com/projectdiscovery/dnsx",
-            "last_updated": "17-Mar-2023",
+            "last_updated": "17-03-23",
             "tags": [
                 "cli",
                 "dns-client",

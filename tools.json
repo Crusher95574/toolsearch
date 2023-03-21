@@ -7,7 +7,7 @@
             "language": "Go",
             "stars": "7.2k",
             "url": "https://github.com/projectdiscovery/subfinder",
-            "last_updated": "18/03/23",
+            "last_updated": "18-03-23",
             "tags": [
                 "osint",
                 "hacking",
@@ -24,7 +24,7 @@
             "language": "Go",
             "stars": "4.6k",
             "url": "https://github.com/projectdiscovery/httpx",
-            "last_updated": "15/03/23",
+            "last_updated": "15-03-23",
             "tags": [
                 "osint",
                 "cli",
@@ -43,7 +43,7 @@
             "language": "Go,Lua",
             "stars": "9k",
             "url": "https://github.com/OWASP/Amass",
-            "last_updated": "14/03/23",
+            "last_updated": "14-03-23",
             "tags": [
                 "osint",
                 "subdomain",
@@ -62,7 +62,7 @@
             "language": "Go,Shell,DockerFile",
             "stars": "2.4k",
             "url": "https://github.com/tomnomnom/httprobe",
-            "last_updated": "09/06/22",
+            "last_updated": "09-06-22",
             "tags": [
                
             ]
@@ -92,7 +92,7 @@
             "language": "Go",
             "stars": "115",
             "url": "https://github.com/incogbyte/shosubgo",
-            "last_updated": "21-May-2021",
+            "last_updated": "21-05-21",
             "tags": [
                 "golang",
                 "shodan",
@@ -107,7 +107,7 @@
             "language": "Go",
             "stars": "9k",
             "url": "https://github.com/ffuf/ffuf",
-            "last_updated": "6-Feb-2023",
+            "last_updated": "6-02-23",
             "tags": [
                 "web",
                 "infosec",
@@ -154,7 +154,7 @@
             "language": "Go",
             "stars": "3.1k",
             "url": "https://github.com/projectdiscovery/naabu",
-            "last_updated": "19-Mar-2023",
+            "last_updated": "19-02-23",
             "tags": [
                 "post-enumeration",
                 "nmap",
@@ -170,7 +170,7 @@
             "language": "C,Makefile",
             "stars": "20.8k",
             "url": "https://github.com/robertdavidgraham/masscan",
-            "last_updated": "31-Jan-2021",
+            "last_updated": "31-01-21",
             "tags": [
             ]
         },
@@ -181,7 +181,7 @@
             "language": "Go",
             "stars": "12.1k",
             "url": "https://github.com/projectdiscovery/nuclei",
-            "last_updated": "17-Mar-2023",
+            "last_updated": "17-02-23",
             "tags": [
                 "security",
                 "vulnerability-detection",
@@ -198,7 +198,7 @@
             "language": "PowerShell,Shell",
             "stars": "625",
             "url": "https://github.com/SNGWN/Burp-Suite",
-            "last_updated": "5-Jun-2022",
+            "last_updated": "5-06-22",
             "tags": [
                 "burpsuite",
                 "pentest-tool",
@@ -214,7 +214,7 @@
             "language": "Python",
             "stars": "4k",
             "url": "https://github.com/s0md3v/Arjun",
-            "last_updated": "11-Sep-2022",
+            "last_updated": "11-09-22",
             "tags": [
                 "recon",
                 "api-testing",
@@ -230,7 +230,7 @@
             "language": "Java,Smali,Lex",
             "stars": "33.8k",
             "url": "https://github.com/skylot/jadx",
-            "last_updated": "11-Feb-2023",
+            "last_updated": "11-02-23",
             "tags": [
                 "android",
                 "java",
@@ -245,7 +245,7 @@
             "language": "Java,C++,HTML",
             "stars": "37.9k",
             "url": "https://github.com/NationalSecurityAgency/ghidra",
-            "last_updated": "9-Feb-2023",
+            "last_updated": "09-02-23",
             "tags": [
                 "disassembler",
                 "reverse-engineering",
@@ -259,7 +259,7 @@
             "language": "Python",
             "stars": "2.1k",
             "url": "https://github.com/achillean/shodan-python",
-            "last_updated": "10-Jul-2022",
+            "last_updated": "10-07-22",
             "tags": [
                 "shodan"
             ]
@@ -271,7 +271,7 @@
             "language": "Python,Javascript",
             "stars": "9.3k",
             "url": "https://github.com/smicallef/spiderfoot",
-            "last_updated": "07-Apr-2022",
+            "last_updated": "07-04-22",
             "tags": [
                 "osint",
                 "infosec",
@@ -289,7 +289,7 @@
             "language": "Python,Dockerfile",
             "stars": "0",
             "url": "https://github.com/MaltegoTech/maltego-trx",
-            "last_updated": "10-Aug-2022",
+            "last_updated": "10-08-22",
             "tags": [
                 "maltego",
                 "osint"
@@ -302,7 +302,7 @@
             "language": "Python,Java,HTML,Shell,CSS",
             "stars": "1.9k",
             "url": "https://github.com/sleuthkit/autopsy",
-            "last_updated": "25-Jan-2023",
+            "last_updated": "25-01-23",
             "tags": [
                 "java",
                 "forensics"
@@ -315,7 +315,7 @@
             "language": "PHP,Java,Classic ASP,HTML,Perl",
             "stars": "7.3k",
             "url": "https://github.com/fuzzdb-project/fuzzdb",
-            "last_updated": "25-Jan-2023",
+            "last_updated": "25-01-23",
             "tags": [
                 "java",
                 "forensics"

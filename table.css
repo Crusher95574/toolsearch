@@ -2,9 +2,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: serif;
 }
-
+ul {
+    position:relative;;
+    list-style-type: none;
+    width:100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    margin-bottom:10px;
+    font-size:1rem;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
 h1 {
     color: var(--heading);
     font-size: 2rem;
@@ -16,7 +43,7 @@ h1 {
     justify-content: center;
     align-items: center;
     width:90%;
-    height:10%;
+    height:100%;
     background-color: #fff5;
     backdrop-filter: blur(7px);
     box-shadow: 0 .4rem .8rem #0005;
@@ -24,8 +51,10 @@ h1 {
     overflow: hidden;
     margin-left: 50px;
     margin-right: 50px;
+    margin-top: 10px;
 }
 .table_header{
+    position: relative;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +66,7 @@ h1 {
     box-shadow: 0 .4rem .8rem #0005;
     border-radius: .8rem;
     padding: .8rem 1rem;
-    margin-top: 5px;
+    margin-top: 30px;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 5px;

@@ -2,18 +2,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: serif;
+    font-family: 'Source Code Pro', monospace;
 }
 ul {
-    position:relative;;
+    position:fixed;
     list-style-type: none;
     width:100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    margin-bottom:10px;
+    margin-bottom:px;
     font-size:1rem;
+    z-index:100;
+
   }
   
   li {
@@ -37,47 +39,55 @@ h1 {
     font-size: 2rem;
     font-weight: 600;
   }
-.table_main{
-    min-height:10vh;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width:90%;
-    height:100%;
-    background-color: #fff5;
-    backdrop-filter: blur(7px);
-    box-shadow: 0 .4rem .8rem #0005;
-    border-radius: .8rem;
-    overflow: hidden;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 10px;
-}
-.table_header{
+  .table_header{
     position: relative;
     display:flex;
     justify-content: center;
     align-items: center;
-    width:90%;
-    height:10%;
+    width:50%;
+    height:50%;
     color: white;
     background-color: #333;
     backdrop-filter: blur(7px);
     box-shadow: 0 .4rem .8rem #0005;
     border-radius: .8rem;
     padding: .8rem 1rem;
-    margin-top: 30px;
-    margin-left: 50px;
+    margin-top: 20px;
+    margin-left: 280px;
     margin-right: 50px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
 }
+.table_main{
+    position: fixed;
+    min-height:10vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:90%;
+    height:90%;
+    background-color: #fff5;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+    overflow: hidden;
+    margin-left: 50px;
+    margin-right: auto;
+    margin-top: 65px;
+    margin-bottom: 50px;
+    box-sizing: inherit;
+}
+
 .table_body{
+    position: fixed;
     width:95%;
     max-height: 89%;
     background-color: #fffb;
     margin: .8rem auto;
     border-radius: .6rem;
+    margin-top: px;
+    margin-bottom: 10px;
     overflow: auto;
+    box-sizing: inherit;
 }
 
 .table_body::-webkit-scrollbar{
@@ -94,6 +104,7 @@ h1 {
 }
 .table_main{
     width:90%;
+    height:90%;
 }
 table,th,td{
     border-collapse: collapse;

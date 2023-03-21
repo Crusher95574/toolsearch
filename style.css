@@ -5,33 +5,7 @@
 
 
 
-ul {
-  position:fixed;
-  list-style-type: none;
-  width:100%;
-  margin: 0;
-  padding: 0;
- 
-  z-index: 100;
-  background-color: #333;
-}
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
 
 .homeImg{
   justify-content: center;
@@ -74,6 +48,7 @@ body {
   background: #FFF;
   -webkit-transition: .3s all ease;
   transition: .15s all ease;
+  border-radius:1rem;
 }
 
 .card-container .card:hover {
@@ -96,9 +71,14 @@ body {
 
 .card-container .card h3 {
   font: 2.8rem/3.4rem 'sans-serif', serif;
-  padding: 0;
-  margin: 0 0 10px;
+  text-align: center;
+  padding: .3rem .3rem;
+  margin: 5px 0 10px;
+  color:#ffffff;
+  background: #333;
+  border-radius: .2rem;
   letter-spacing: -.075rem
+
 }
 
 .card-container .card p {

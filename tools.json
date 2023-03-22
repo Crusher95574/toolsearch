@@ -101,7 +101,7 @@
             ]
         },
         {
-            "type":"Web Exploit",
+            "type":"Web_Exploit",
             "name": "ffuf",
             "description": "ffuf scans against a live host with different lessons and use cases ",
             "language": "Go",
@@ -116,7 +116,7 @@
             ]
         },
         {
-            "type":"Web Exploit",
+            "type":"Web_Exploit",
             "name": "dirb",
             "description": "DIRB  IS  a  Web Content Scanner. It looks for existing (and/or hidden)    Web Objects. It basically works by launching a dictionary basesd attack against a web server and analizing the response.  ",
             "language": "",
@@ -175,7 +175,7 @@
             ]
         },
         {
-            "type":"Web Exploit",
+            "type":"Web_Exploit",
             "name": "nuclei",
             "description": "Fast and customizable vulnerability scanner based on simple YAML based DSL",
             "language": "Go",
@@ -192,7 +192,7 @@
             ]
         },
         {
-            "type":"Web Exploit",
+            "type":"Web_Exploit",
             "name": "burp-suite",
             "description": "Activate Burp Suite Pro with Key-Generator and Key-Loader",
             "language": "PowerShell,Shell",
@@ -309,7 +309,7 @@
             ]
         },
         {
-            "type":"Web Exploit",
+            "type":"Web_Exploit",
             "name": "fuzzdb",
             "description": "Dictionary of attack patterns and primitives for black-box application fault injection and resource discovery",
             "language": "PHP,Java,Classic ASP,HTML,Perl",

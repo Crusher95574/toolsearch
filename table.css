@@ -8,14 +8,12 @@ ul {
     position:fixed;
     list-style-type: none;
     width:100%;
-    margin: 0;
+    margin:0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    margin-bottom:px;
     font-size:1rem;
     z-index:100;
-
   }
   
   li {
@@ -52,10 +50,10 @@ h1 {
     box-shadow: 0 .4rem .8rem #0005;
     border-radius: .8rem;
     padding: .8rem 1rem;
-    margin-top: 20px;
-    margin-left: 280px;
-    margin-right: 50px;
-    margin-bottom: 20px;
+    margin-top: 1rem;
+    margin-left: 20rem;
+    margin-right: 10rem;
+    margin-bottom: 1rem;
 }
 .table_main{
     position: fixed;
@@ -63,29 +61,30 @@ h1 {
     display:flex;
     justify-content: center;
     align-items: center;
-    width:90%;
+    width:93%;
     height:90%;
     background-color: #fff5;
     backdrop-filter: blur(7px);
     box-shadow: 0 .4rem .8rem #0005;
     border-radius: .8rem;
     overflow: hidden;
-    margin-left: 60px;
-    margin-right: auto;
-    margin-top: 65px;
-    margin-bottom: 50px;
+    margin-left: 4.5rem;
+    margin-right: 5rem;
+    margin-top: 4.2rem;
+    margin-bottom: 2.4rem;
     box-sizing: inherit;
 }
 
 .table_body{
+    text-align: center;
     position: fixed;
-    width:95%;
+    width:98%;
     max-height: 89%;
     background-color: #fffb;
     margin: .8rem auto;
     border-radius: .6rem;
-    margin-top: px;
-    margin-bottom: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     overflow: auto;
     box-sizing: inherit;
 }

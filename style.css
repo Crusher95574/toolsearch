@@ -7,18 +7,19 @@
 
 
 
-.homeImg{
+.homeImg {
   justify-content: center;
   align-items: center;
-   max-width: 80%;
-   padding: 5rem 3rem;
-   display: flex;
-   border-radius: 2px;
-   margin-top:0rem;
+  max-width: 80%;
+  padding: 5rem 3rem;
+  display: flex;
+  border-radius: 2px;
+  margin-top: 0rem;
   margin-bottom: 0rem;
   margin-left: 8rem;
   margin-right: 8rem;
 }
+
 body {
   background: #F0F0F0;
   -webkit-font-smoothing: antialiased;
@@ -48,7 +49,7 @@ body {
   background: #FFF;
   -webkit-transition: .3s all ease;
   transition: .15s all ease;
-  border-radius:1rem;
+  border-radius: 1rem;
 }
 
 .card-container .card:hover {
@@ -74,11 +75,10 @@ body {
   text-align: center;
   padding: .3rem .3rem;
   margin: 5px 0 10px;
-  color:#ffffff;
+  color: #ffffff;
   background: #333;
   border-radius: .2rem;
   letter-spacing: -.075rem
-
 }
 
 .card-container .card p {
@@ -99,5 +99,3 @@ p {
   line-height: 1;
   font-size: 1.7rem;
 }
-
-

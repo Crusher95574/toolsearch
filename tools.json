@@ -5,7 +5,7 @@
             "name": "subfinder",
             "description": "Fast passive subdomain enumeration tool",
             "language": "Go",
-            "stars": "7.2k ⭐",
+            "stars": "7.2k",
             "url": "https://github.com/projectdiscovery/subfinder",
             "last_updated": "18-Mar-2023",
             "tags": [

@@ -22,7 +22,7 @@
             "name": "httpx",
             "description": "Fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library",
             "language": "Go",
-            "stars": "4.6k ⭐",
+            "stars": "4.6k",
             "url": "https://github.com/projectdiscovery/httpx",
             "last_updated": "15-Mar-2023",
             "tags": [

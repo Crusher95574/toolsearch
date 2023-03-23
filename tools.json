@@ -1,13 +1,13 @@
 {
     "tools": [
         {
-            "type":"Reconnaissance",
+            "type":"reconnaissance",
             "name": "subfinder",
             "description": "Fast passive subdomain enumeration tool",
             "language": "Go",
             "stars": "7.2k",
             "url": "https://github.com/projectdiscovery/subfinder",
-            "last_updated": "18-03-23",
+            "last_updated":"18-03-23",
             "tags": [
                 "osint",
                 "hacking",
@@ -18,7 +18,7 @@
             ]
         },
         {
-            "type":"Reconnaissance",
+            "type":"reconnaissance",
             "name": "httpx",
             "description": "Fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library",
             "language": "Go",
@@ -37,7 +37,7 @@
             ]
         },
         {
-            "type":"Reconnaissance",
+            "type":"reconnaissance",
             "name": "amass",
             "description": "In-depth Attack Surface Mapping and Asset Discovery",
             "language": "Go,Lua",
@@ -56,7 +56,7 @@
             ]
         },
         {
-            "type":"Network",
+            "type":"network",
             "name": "httprobe",
             "description": "Take a list of domains and probe for working HTTP and HTTPS servers",
             "language": "Go,Shell,DockerFile",
@@ -68,7 +68,7 @@
             ]
         },
         {
-            "type":"Network",
+            "type":"network",
             "name": "dnsx",
             "description": "dnsx is a fast and multi-purpose DNS toolkit allow to run multiple DNS queries of your choice with a list of user-supplied resolvers.",
             "language": "Go,Shell",
@@ -86,7 +86,7 @@
             ]
         },
         {
-            "type":"Api",
+            "type":"api",
             "name": "shosubgo",
             "description": "Small tool to Grab subdomains using Shodan api ",
             "language": "Go",
@@ -101,7 +101,7 @@
             ]
         },
         {
-            "type":"Web_Exploit",
+            "type":"web_exploit",
             "name": "ffuf",
             "description": "ffuf scans against a live host with different lessons and use cases ",
             "language": "Go",
@@ -116,7 +116,7 @@
             ]
         },
         {
-            "type":"Web_Exploit",
+            "type":"web_exploit",
             "name": "dirb",
             "description": "DIRB  IS  a  Web Content Scanner. It looks for existing (and/or hidden)    Web Objects. It basically works by launching a dictionary basesd attack against a web server and analizing the response.  ",
             "language": "",
@@ -128,7 +128,7 @@
             ]
         },
         {
-            "type":"Network",
+            "type":"network",
             "name": "nmap",
             "description": "Nmap - the Network Mapper. Github mirror of official SVN repository ",
             "language": "C,Lua,C++,Python",
@@ -148,7 +148,7 @@
             ]
         },
         {
-            "type":"Network",
+            "type":"network",
             "name": "naabu",
             "description": "A fast port scanner written in go with a focus on reliability and simplicity. Designed to be used in combination with other tools for attack surface discovery in bug bounties and pentests",
             "language": "Go",
@@ -164,7 +164,7 @@
             ]
         },
         {
-            "type":"Network",
+            "type":"network",
             "name": "masscan",
             "description": "TCP port scanner, spews SYN packets asynchronously, scanning entire Internet in under 5 minutes",
             "language": "C,Makefile",
@@ -175,7 +175,7 @@
             ]
         },
         {
-            "type":"Web_Exploit",
+            "type":"web_exploit",
             "name": "nuclei",
             "description": "Fast and customizable vulnerability scanner based on simple YAML based DSL",
             "language": "Go",
@@ -192,7 +192,7 @@
             ]
         },
         {
-            "type":"Web_Exploit",
+            "type":"web_exploit",
             "name": "burp-suite",
             "description": "Activate Burp Suite Pro with Key-Generator and Key-Loader",
             "language": "PowerShell,Shell",
@@ -208,7 +208,7 @@
             ]
         },
         {
-            "type":"Api",
+            "type":"api",
             "name": "ar06",
             "description": "HTTP parameter discovery suite",
             "language": "Python",
@@ -224,7 +224,7 @@
             ]
         },
         {
-            "type":"Reverse Engineering",
+            "type":"reverse_engineering",
             "name": "jadx",
             "description": "Command line and GUI tools for producing Java source code from Android Dex and Apk files",
             "language": "Java,Smali,Lex",
@@ -239,7 +239,7 @@
             ]
         },
         {
-            "type":"Reverse Engineering",
+            "type":"reverse_engineering",
             "name": "ghidra",
             "description": "Ghidra is a software reverse engineering (SRE) framework",
             "language": "Java,C++,HTML",
@@ -253,7 +253,7 @@
             ]
         },
         {
-            "type":"OSINT",
+            "type":"osint",
             "name": "shodan",
             "description": "Shodan is a search engine for Internet-connected devices. Google lets you search for websites, Shodan lets you search for devices. This library provides developers easy access to all of the data stored in Shodan in order to automate tasks and integrate into existing tools",
             "language": "Python",
@@ -265,7 +265,7 @@
             ]
         },
         {
-            "type":"OSINT",
+            "type":"osint",
             "name": "spiderfoot",
             "description": "SpiderFoot automates OSINT for threat intelligence and mapping your attack surface",
             "language": "Python,Javascript",
@@ -283,7 +283,7 @@
             ]
         },
         {
-            "type":"OSINT",
+            "type":"osint",
             "name": "maltego",
             "description": "Maltego is a comprehensive tool for graphical link analyses that offers real-time data mining and information gathering",
             "language": "Python,Dockerfile",
@@ -296,7 +296,7 @@
             ]
         },
         {
-            "type":"Forensic",
+            "type":"forensic",
             "name": "autopsy",
             "description": "Autopsy® is a digital forensics platform and graphical interface to The Sleuth Kit® and other digital forensics tools. It can be used by law enforcement, military, and corporate examiners to investigate what happened on a computer. You can even use it to recover photos from your camera's memory card",
             "language": "Python,Java,HTML,Shell,CSS",
@@ -309,7 +309,7 @@
             ]
         },
         {
-            "type":"Web_Exploit",
+            "type":"web_exploit",
             "name": "fuzzdb",
             "description": "Dictionary of attack patterns and primitives for black-box application fault injection and resource discovery",
             "language": "PHP,Java,Classic ASP,HTML,Perl",

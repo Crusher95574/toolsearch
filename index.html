@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hacking Tools</title>
+    <title>Tool Search</title>
+    <link rel="icon" href="fav.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="table.css" />
-    <link rel="icon" href="fav.ico" type="image/x-icon">
+
     <script type="text/javascript">
-        async function getgit(owner, repo, path) {
-            // A function to fetch files from github using the api 
+      async function getgit(owner, repo, path) {
+        // A function to fetch files from github using the api
 
-            let data = await fetch(
-                `https://api.github.com/repos/${owner}/${repo}/contents/${path}`
+        let data = await fetch(
+          `https://api.github.com/repos/${owner}/${repo}/contents/${path}`
+        )
+          .then((d) => d.json())
+          .then((d) =>
+            fetch(
+              `https://api.github.com/repos/${owner}/${repo}/git/blobs/${d.sha}`
             )
-                .then(d => d.json())
-                .then(d =>
-                    fetch(
-                        `https://api.github.com/repos/${owner}/${repo}/git/blobs/${d.sha}`
-                    )
-                )
-                .then(d => d.json())
-                .then(d => JSON.parse(atob(d.content)));
-            console.log(data);
+          )
+          .then((d) => d.json())
+          .then((d) => JSON.parse(atob(d.content)));
+        console.log(data);
 
-            document.getElementById("tbody").innerHTML = data.tools.map((tool) =>
-                `<tr>
+        document.getElementById("tbody").innerHTML = data.tools
+          .map(
+            (tool) =>
+              `<tr>
                     <td>${tool.name}</td>
                     <td>${tool.description}</td>
                     <td>${tool.stars}⭐</td>
@@ -36,57 +38,61 @@
                     <td><a target="_blank" href="${tool.url}">link</a></td>                                       
                     <td>${tool.last_updated}</td>
                 </tr >`
-            ).join("");
+          )
+          .join("");
 
-            return data;
-
-        }
-        result = getgit("Crusher95574", "toolsearch", "tools.json");
-
-
-
+        return data;
+      }
+      result = getgit("Crusher95574", "toolsearch", "tools.json");
     </script>
+  </head>
 
-
-</head>
-
-<body>
-    <section>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="reconnaissance.html">Reconnaissance</a></li>
-            <li><a href="api.html">Api</a></li>
-            <li><a href="network.html">Network</a></li>
-            <li><a href="ctf.html">CTF</a></li>
-            <li><a href="forensic.html">Forensic</a></li>
-            <li><a href="webExploit.html">Web Exploit</a></li>
-            <li><a href="reverseEngineering.html">Reverse Engineering</a></li>
-            <li><a href="osint.html">OSINT</a></li>
-        </ul>
-    </section>
-
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="reconnaissance.html">Reconnaissance</a></li>
+        <li><a href="api.html">Api</a></li>
+        <li><a href="network.html">Network</a></li>
+        <li><a href="ctf.html">CTF</a></li>
+        <li><a href="forensic.html">Forensic</a></li>
+        <li><a href="webExploit.html">Web Exploit</a></li>
+        <li><a href="reverseEngineering.html">Reverse Engineering</a></li>
+        <li><a href="osint.html">OSINT</a></li>
+        <li><img id="icon" src="sunimage.png" ></li>
+      </ul>
+    </nav>
     <section class="table_main">
+      <section class="table_body" id="table_id">
+        <h1 class="table_header">Tools List</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Stars</th>
+              <th>Language</th>
+              <th>Url</th>
+              <th>Last Updated</th>
+            </tr>
+          </thead>
 
-        <section class="table_body" id="table_id">
-            <h1 class="table_header">Tools List</h1>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Description</th>
-                        <th>Stars</th>
-                        <th>Language</th>
-                        <th>Url</th>
-                        <th>Last Updated</th>
-                    </tr>
-                </thead>
-
-                <tbody id="tbody">
-
-                </tbody>
-            </table>
-        </section>
+          <tbody id="tbody"></tbody>
+        </table>
+      </section>
     </section>
-</body>
-
+     <script>
+        var icon=document.getElementById("icon");
+        icon.onclick= function(){
+            document.body.classList.toggle("light-theme");
+            if(document.body.classList.contains("light-theme")){
+                
+                icon.src="moon.png";
+            }
+            else{
+                icon.src="sunimage.png";
+            }
+        }
+     </script>
+  </body>
 </html>

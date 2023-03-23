@@ -1,24 +1,33 @@
 <html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tool Search</title>
+    <link rel="icon" href="fav.ico" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="table.css" />
- 
-   
+  </head>
+
+  <nav>
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="reconnaissance.html">Reconnaissance</a></li>
-        <li><a href="api.html">Api</a></li>
-        <li><a href="network.html">Network</a></li>
-        <li><a href="ctf.html">CTF</a></li>
-        <li><a href="forensic.html">Forensic</a></li>
-        <li><a href="webExploit.html">Web Exploit</a></li>
-        <li><a href="reverseEngineering.html">Reverse Engineering</a></li>
-        <li><a href="osint.html">OSINT</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="reconnaissance.html">Reconnaissance</a></li>
+      <li><a href="api.html">Api</a></li>
+      <li><a href="network.html">Network</a></li>
+      <li><a href="ctf.html">CTF</a></li>
+      <li><a href="forensic.html">Forensic</a></li>
+      <li><a href="webExploit.html">Web Exploit</a></li>
+      <li><a href="reverseEngineering.html">Reverse Engineering</a></li>
+      <li><a href="osint.html">OSINT</a></li>
+      <li><img id="icon" src="sunimage.png" href=""></li>
     </ul>
+  </nav>
   <body>
     <div class="api section-hero">
       <div class="container grid grid-two-column">
         <div class="section-hero-data">
-         <!--<p class="hero-top-data">this is me</p>-->
+          <!--<p class="hero-top-data">this is me</p>-->
           <h1 class="hero-heading">API Tools</h1>
           <p class="hero-para">These are the tools for API</p>
         </div>
@@ -31,96 +40,122 @@
         </div>
       </div>
     </div>
-    
+
     <div class="card-container">
-
-        <div class="card">
-            <div class="content">
-                <h3>Httpx</h3>
-                <p>Fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library</p>
-                <p>4.6k ⭐</p>
-                <a href="https://github.com/projectdiscovery/httpx"></a>
-                <p>Language: Go</p>
-                
-            </div>
+      <div class="card">
+        <div class="content">
+          <h3>Httpx</h3>
+          <p>
+            Fast and multi-purpose HTTP toolkit that allows running multiple
+            probes using the retryablehttp library
+          </p>
+          <p>4.6k ⭐</p>
+          <a href="https://github.com/projectdiscovery/httpx"></a>
+          <p>Language: Go</p>
         </div>
+      </div>
 
-        <div class="card">
-            <div class="content">
-                <h3>Httpx</h3>
-                <p>Fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library</p>
-                <p>4.6k ⭐</p>
-                <a href="https://github.com/projectdiscovery/httpx"></a>
-                <p>Language: Go</p>
-               tags: yes,no
-            </div>
+      <div class="card">
+        <div class="content">
+          <h3>Httpx</h3>
+          <p>
+            Fast and multi-purpose HTTP toolkit that allows running multiple
+            probes using the retryablehttp library
+          </p>
+          <p>4.6k ⭐</p>
+          <a href="https://github.com/projectdiscovery/httpx"></a>
+          <p>Language: Go</p>
+          tags: yes,no
         </div>
-        <div class="card">
-            <div class="content">
-                <h3>Httpx</h3>
-                <p>Fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library</p>
-                <p>4.6k ⭐</p>
-                <a href="https://github.com/projectdiscovery/httpx"></a>
-                <p>Language: Go</p>
-                
-            </div>
+      </div>
+      <div class="card">
+        <div class="content">
+          <h3>Httpx</h3>
+          <p>
+            Fast and multi-purpose HTTP toolkit that allows running multiple
+            probes using the retryablehttp library
+          </p>
+          <p>4.6k ⭐</p>
+          <a href="https://github.com/projectdiscovery/httpx"></a>
+          <p>Language: Go</p>
         </div>
-
+      </div>
     </div>
+    <script>
+      var icon=document.getElementById("icon");
+      icon.onclick= function(){
+          document.body.classList.toggle("light-theme");
+          if(document.body.classList.contains("light-theme")){
+            icon.src="moon.png";
+          }
+          else{
+             
+              icon.src="sunimage.png";
+          }
+      }
+   </script>
   </body>
   <style>
-    
-  .api {
-    padding: 5rem 10rem;
-  }
-  .container {
-    max-width: auto;
-    margin: 0 auto;
-  }
-  .grid {
-    display: grid;
-    gap: 7rem;
-  }
-  
-  .grid-two-column {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
-  .section-hero {
-    background-color: var(--bg);
-  }
-  
-  .section-hero-data {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  .hero-top-data {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 1.5rem;
-    color: var(--helper);
-  }
-  .hero-heading {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 6rem;
-    margin-bottom: 1rem;
-  }
-  .hero-para {
-    margin-top:0rem;
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    max-width: 50rem;
-  }
-  
-  .section-hero-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .hero-img {
-    max-width: 100%;
-  }
+    .light-theme{
+      --heroText-color:black;
+    }
+:root{
+  --heroText-color:white;
+}
+    .api {
+      padding: 5rem 10rem;
+    }
+    .container {
+      max-width: auto;
+      margin: 0 auto;
+    }
+    .grid {
+      display: grid;
+      gap: 7rem;
+    }
+
+    .grid-two-column {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-hero {
+      background-color: var(--bg);
+    }
+
+    .section-hero-data {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .hero-top-data {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 1.5rem;
+      color: var(--helper);
+    }
+    .hero-heading {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 6rem;
+      margin-bottom: 1rem;
+      color:var(--heroText-color);
+    }
+    .hero-para {
+      margin-top: 0rem;
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+      max-width: 50rem;
+      color:var(--heroText-color);
+    }
+
+    .section-hero-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .hero-img {
+      max-width: 100%;
+    }
   </style>
 </html>

@@ -4,6 +4,31 @@
     box-sizing: border-box;
     font-family: 'Source Code Pro', monospace;
 }
+:root{
+    --primary-color:white;
+    --secondary-color:black; 
+    --table-main-color:black;
+    --hover-color:#fff5;
+}
+.light-theme{
+    --primary-color:white;
+    --secondary-color:#333;
+
+    --table-main-color:#fffb;
+    --hover-color:black;
+}
+
+
+#icon{
+width: 30px;
+position:relative;
+margin-left:1rem;
+justify-content: right;
+margin-top:.5rem ;
+cursor: pointer;
+background-color:var(--primary-color);
+border-radius: 1rem;;
+}
 ul {
     position:fixed;
     list-style-type: none;
@@ -11,7 +36,7 @@ ul {
     margin:0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: var(--secondary-color);
     font-size:1rem;
     z-index:100;
   }
@@ -22,7 +47,7 @@ ul {
   
   li a {
     display: block;
-    color: white;
+    color: var(--primary-color);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -30,7 +55,7 @@ ul {
   
   /* Change the link color to #111 (black) on hover */
   li a:hover {
-    background-color: #111;
+    background-color: var(--hover-color);
   }
 h1 {
     color: var(--heading);
@@ -44,8 +69,8 @@ h1 {
     align-items: center;
     width:50%;
     height:50%;
-    color: white;
-    background-color: #333;
+    color: var(--primary-color);
+    background-color:var(--secondary-color);
     backdrop-filter: blur(7px);
     box-shadow: 0 .4rem .8rem #0005;
     border-radius: .8rem;
@@ -63,7 +88,7 @@ h1 {
     align-items: center;
     width:93%;
     height:90%;
-    background-color: #fff5;
+    background-color: var(--table-main-color);
     backdrop-filter: blur(7px);
     box-shadow: 0 .4rem .8rem #0005;
     border-radius: .8rem;
@@ -113,7 +138,8 @@ thead th{
     position: sticky;
     top: 0;
     left:0;
-    background-color: #d5d1defe;
+    background-color: #333;
+    color:white;
 }
 tbody tr:nth-child(even){
     background-color: #0000000b;

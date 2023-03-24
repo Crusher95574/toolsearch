@@ -3,8 +3,20 @@
   src: url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 }
 
-
-
+:root{
+  --navText-color:white;
+  --navbar-color:black;
+  --icon-color:white;
+  --bodybackground-color:black;
+  --card-color:#333;
+}
+.light-theme{
+  --navText-color:white;
+  --navbar-color:#333;
+  --icon-color:white;
+  --bodybackground-color:white;
+  --card-color:white;
+}
 
 
 .homeImg {
@@ -21,7 +33,7 @@
 }
 
 body {
-  background: #F0F0F0;
+  background: var(--bodybackground-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -46,7 +58,7 @@ body {
   width: calc(100% / 3 - 20px);
   float: left;
   box-shadow: 0 0 2px 2px rgba(0, 0, 0, .05);
-  background: #FFF;
+  background: var(--card-color);
   -webkit-transition: .3s all ease;
   transition: .15s all ease;
   border-radius: 1rem;

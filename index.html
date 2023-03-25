@@ -45,11 +45,11 @@
       }
       result = getgit("Crusher95574", "toolsearch", "tools.json");
     </script>
-  </head>
 
-  <body>
-    <nav>
-      <ul>
+    <nav id="navbar">
+     
+       <ul>
+        
         <li><a href="index.html">Home</a></li>
         <li><a href="reconnaissance.html">Reconnaissance</a></li>
         <li><a href="api.html">Api</a></li>
@@ -59,14 +59,46 @@
         <li><a href="webExploit.html">Web Exploit</a></li>
         <li><a href="reverseEngineering.html">Reverse Engineering</a></li>
         <li><a href="osint.html">OSINT</a></li>
-        <li><img id="icon" src="sunimage.png" ></li>
+        
+        <li><img id="icon" src="sunimage.png" /></li>
+        <form id="myForm" autocomplete="off">
+          <span
+            ><input
+              type="text"
+              id="search"
+              placeholder="Search for hacking tools"
+              required
+          /></span>
+          <span><button>search</button></span>
+        </form>
       </ul>
     </nav>
+
+  </head>
+
+  <body>
+    <div class="index section-hero">
+      <div class="container grid grid-two-column">
+        <div class="section-hero-data">
+          <!--<p class="hero-top-data">this is me</p>-->
+          <h1 class="hero-heading">Rashahacks</h1>
+          <p class="hero-para">These are the tools </p>
+        </div>
+        <div class="section-hero-image">
+          <img
+            src="rashahacks.png"
+            class="hero-img"
+            alt="..."
+          />
+        </div>
+      </div>
+    </div>
+
     <section class="table_main">
       <section class="table_body" id="table_id">
         <h1 class="table_header">Tools List</h1>
         <table>
-          <thead>
+          <thead class="table_head">
             <tr>
               <th>Name</th>
               <th>Description</th>
@@ -81,18 +113,80 @@
         </table>
       </section>
     </section>
-     <script>
-        var icon=document.getElementById("icon");
-        icon.onclick= function(){
-            document.body.classList.toggle("light-theme");
-            if(document.body.classList.contains("light-theme")){
-                
-                icon.src="moon.png";
-            }
-            else{
-                icon.src="sunimage.png";
-            }
+
+    <script>
+      var icon = document.getElementById("icon");
+      icon.onclick = function () {
+        document.body.classList.toggle("light-theme");
+        if (document.body.classList.contains("light-theme")) {
+          icon.src = "moon.png";
+        } else {
+          icon.src = "sunimage.png";
         }
-     </script>
+      };
+    </script>
   </body>
+  <style>
+    .light-theme {
+      --heroText-color: black;
+    }
+    :root {
+      --heroText-color: white;
+    }
+    .index {
+      padding: 4rem 10rem;
+    }
+    .container {
+      max-width: auto;
+      margin: 0 auto;
+    }
+    .grid {
+      display: grid;
+      gap: 9rem;
+    }
+
+    .grid-two-column {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-hero {
+      background-color: var(--bg);
+    }
+
+    .section-hero-data {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .hero-top-data {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 1.5rem;
+      color: var(--helper);
+    }
+    .hero-heading {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 6rem;
+      margin-bottom: 1rem;
+      color: var(--heroText-color);
+    }
+    .hero-para {
+      margin-top: 0rem;
+      font-size: 1.5rem;
+      margin-bottom: 4rem;
+      max-width: 50rem;
+      color: var(--heroText-color);
+    }
+
+    .section-hero-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero-img {
+      max-width: 100%;
+    }
+  
+  </style>
 </html>

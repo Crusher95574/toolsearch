@@ -89,7 +89,7 @@
     </div>
   </div>
   <section class="table_main">
-  
+
     <section class="table_body" id="table_id">
       <h1 class="table_header">Tools List</h1>
       <div id="card" class="card-container"></div>
@@ -106,12 +106,12 @@
         </thead>
 
         <tbody id="tbody"></tbody>
-      
+
       </table>
     </section>
   </section>
 
- 
+
 
   <script type="text/javascript">
     async function getgit(owner, repo, path) {
@@ -173,7 +173,7 @@
     }
     data = getgit("Crusher95574", "toolsearch", "tools.json");
   </script>
-   <script>
+  <script>
     var icon = document.getElementById("icon");
     var rasha = document.getElementById("hero-img");
     icon.onclick = function () {
@@ -188,122 +188,132 @@
     };
   </script>
 
-  </body>
-  <style>
-     .light-theme {
-      --heroText-color: black;
-    }
-    :root {
-      --heroText-color: white;
-    }
-    .index {
-      padding: 10rem 10rem;
-    }
-    .container {
-      max-width: auto;
-      margin: 0 auto;
-    }
-    .grid {
-      display: grid;
-      gap: 9rem;
-    }
+</body>
+<style>
+  .light-theme {
+    --heroText-color: black;
+  }
 
-    .grid-two-column {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  :root {
+    --heroText-color: white;
+  }
 
-    .section-hero {
-      background-color: var(--bg);
-    }
+  .index {
+    padding: 6rem 10rem;
+  }
 
-    .section-hero-data {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .hero-top-data {
-      text-transform: uppercase;
-      font-weight: 500;
-      font-size: 1.5rem;
-      color: var(--helper);
-    }
-    .hero-heading {
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 6rem;
-      margin-bottom: 1rem;
-      color: var(--heroText-color);
-    }
-    .hero-para {
-      margin-top: 0rem;
-      font-size: 1.5rem;
-      margin-bottom: 4rem;
-      max-width: 50rem;
-      color: var(--heroText-color);
-    }
+  .container {
+    max-width: auto;
+    margin: 0 auto;
+  }
 
-    .section-hero-image {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    #hero-img {
-      max-width: 100%;
-      border-radius: 100%;
-    }
-    
-    #search {
-      width: 300px;
-      padding:.5rem;
-      margin-top: 5px;
-      margin-left: 20px;
-      border-radius: 20px;
-    }
+  .grid {
+    display: grid;
+    gap: 9rem;
+  }
 
-    #search:focus {
-      border: white;
-    }
+  .grid-two-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .button {
-      background-color: #626262;
-      border: none;
-      color: white;
+  .section-hero {
+    background-color: var(--bg);
+  }
 
-      padding: .5rem;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      border-radius: 10px;
-      transition-duration: 0.4s;
-      margin-top: .5rem;
-    }
+  .section-hero-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .button:hover {
-      background-color: #d6d6d6;
-      color: black;
-    }
+  .hero-top-data {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--helper);
+  }
 
-    .button2 {
-      background-color: #626262;
-      border: none;
-      color: white;
-      padding: .5rem;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      border-radius: 10px;
-      transition-duration: 0.4s;
-      margin-left: 1rem;
-      margin-top: .5rem;
-    }
+  .hero-heading {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    color: var(--heroText-color);
+  }
 
-    .button2:hover {
-      background-color: #d6d6d6;
-      color: black;
-    }
-  </style>
+  .hero-para {
+    margin-top: 0rem;
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+    max-width: 50rem;
+    color: var(--heroText-color);
+  }
+
+  .section-hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #hero-img {
+    max-width: 80%;
+    border-radius: 100%;
+  }
+
+  #search {
+    width: 22rem;
+    padding: .5rem;
+    margin-top: .3rem;
+    margin-left: 1rem;
+    border-radius: 1rem;
+  }
+
+  #search:focus {
+    border: white;
+  }
+
+
+  .button {
+    background-color: #626262;
+    border: none;
+    color: white;
+
+    padding: .5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 1rem;
+    transition-duration: 0.4s;
+    margin-top: .3rem;
+  }
+
+  .button:hover {
+    background-color: #d6d6d6;
+    color: black;
+  }
+
+  .button2 {
+    background-color: #626262;
+    border: none;
+    color: white;
+
+    padding: .5rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 1rem;
+    transition-duration: 0.4s;
+    margin-top: .3rem;
+    margin-left: 0.5rem;
+  }
+
+  .button2:hover {
+    background-color: #d6d6d6;
+    color: black;
+  }
+</style>
 </body>
 
 </html>

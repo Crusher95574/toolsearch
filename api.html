@@ -36,7 +36,7 @@
         <h3>${items.name}</h3>
         <p>${items.description}</p>
         <p>Rating: ${items.stars}⭐</p>
-        <a target="_blank" href="${items.url}">link</a>
+        <a target="_blank" href="${items.url}">Link</a>
         <p>Language: ${items.language}</p>
         </div>
       </div>
@@ -96,7 +96,9 @@
         <div id="result2"></div>
       </div>
       <div class="section-hero-image">
-        <img src="heroImg.png" class="hero-img" alt="..." />
+        <video autoplay muted loop width="500rem">
+          <source id="hero-img" src="rashahacksanimation.mp4">
+        </video>
       </div>
     </div>
   </div>
@@ -216,8 +218,9 @@
           <h3>${items.name}</h3>
           <p>${items.description}</p>
           <p>${items.stars}⭐</p>
-          <a target="_blank" href="${items.url}">link</a>
+          <a target="_blank" href="${items.url}"></a>
           <p>Language:${items.language}</p>
+
           </div>
         </div>
           `).join("");
@@ -248,10 +251,12 @@
 <style>
   .light-theme {
     --heroText-color: black;
+    --cardtext-color: black;
   }
 
   :root {
     --heroText-color: white;
+    --cardtext-color: white;
   }
 
   .api {
@@ -312,28 +317,31 @@
 
   }
 
-  .hero-img {
+  #hero-img {
     max-width: 100%;
+    border-radius: 100%;
   }
 
   #search {
-    width: 300px;
-    padding: 8px 6px;
-    margin-top: 5px;
-    margin-left: 20px;
-    border-radius: 20px;
+    width: 22rem;
+    padding: .5rem;
+    margin-top: .3rem;
+    margin-left: 1rem;
+    border-radius: 1rem;
   }
+
+
 
   #search:focus {
     border: white;
   }
 
   #search2 {
-    width: 300px;
-    padding: 8px 6px;
-    margin-top: 5px;
-    margin-left: 20px;
-    border-radius: 20px;
+    width: 22rem;
+    padding: .5rem;
+    margin-top: .3rem;
+    margin-left: 1rem;
+    border-radius: 1rem;
   }
 
   #search2:focus {
@@ -345,13 +353,14 @@
     border: none;
     color: white;
 
-    padding: 7px 10px 8px 10px;
+    padding: .5rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    border-radius: 10px;
+    font-size: 1rem;
+    border-radius: 1rem;
     transition-duration: 0.4s;
+    margin-top: .3rem;
   }
 
   .button:hover {
@@ -364,15 +373,15 @@
     border: none;
     color: white;
 
-    padding: 7px 10px 8px 10px;
+    padding: .5rem;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    border-radius: 10px;
+    font-size: 1rem;
+    border-radius: 1rem;
     transition-duration: 0.4s;
-    margin-left: 10px;
-    margin-top: 5px;
+    margin-top: .3rem;
+    margin-left: 0.5rem;
   }
 
   .button2:hover {

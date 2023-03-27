@@ -3,19 +3,22 @@
   src: url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 }
 
-:root{
-  --navText-color:white;
-  --navbar-color:black;
-  --icon-color:white;
-  --bodybackground-color:black;
-  --card-color:#333;
+:root {
+  --navText-color: white;
+  --navbar-color: black;
+  --icon-color: white;
+  --bodybackground-color: black;
+  --card-color: #333;
+  --card-text-color: white;
 }
-.light-theme{
-  --navText-color:white;
-  --navbar-color:#333;
-  --icon-color:white;
-  --bodybackground-color:white;
-  --card-color:white;
+
+.light-theme {
+  --navText-color: white;
+  --navbar-color: #333;
+  --icon-color: white;
+  --bodybackground-color: white;
+  --card-color: white;
+  --card-text-color: black;
 }
 
 
@@ -33,6 +36,7 @@ body {
   display: flex;
   border-radius: 1px;
   flex-flow: row wrap;
+
 }
 
 .card-container:hover .card {
@@ -77,7 +81,7 @@ body {
 }
 
 .card-container .card p {
-  color: #888;
+  color: var(--card-text-color);
   padding: 0;
   margin: 0;
   font: 400 1.2rem/2.2rem 'Open Sans script=all', sans-serif;

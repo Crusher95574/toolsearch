@@ -46,9 +46,6 @@
     }
     result = getgit("Crusher95574", "toolsearch", "tools.json");
   </script>
-</head>
-
-<body>
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -76,16 +73,28 @@
       </li>
     </ul>
   </nav>
+</head>
 
-
+<body>
+  <div class="index section-hero">
+    <div class="container grid grid-two-column">
+      <div class="section-hero-data">
+        <!--<p class="hero-top-data">this is me</p>-->
+        <h1 class="hero-heading">Rashahacks</h1>
+        <p class="hero-para">These are the tools</p>
+      </div>
+      <div class="section-hero-image">
+        <img id="hero-img" src="rashahacks.jpg" />
+      </div>
+    </div>
+  </div>
   <section class="table_main">
-
+  
     <section class="table_body" id="table_id">
-
       <h1 class="table_header">Tools List</h1>
       <div id="card" class="card-container"></div>
       <table>
-        <thead>
+        <thead class="table_head">
           <tr>
             <th>Name</th>
             <th>Description</th>
@@ -97,25 +106,13 @@
         </thead>
 
         <tbody id="tbody"></tbody>
-
-
-        </div>
+      
       </table>
     </section>
   </section>
-  <script>
-    var icon = document.getElementById("icon");
-    icon.onclick = function () {
-      document.body.classList.toggle("light-theme");
-      if (document.body.classList.contains("light-theme")) {
 
-        icon.src = "moon.png";
-      }
-      else {
-        icon.src = "sunimage.png";
-      }
-    }
-  </script>
+ 
+
   <script type="text/javascript">
     async function getgit(owner, repo, path) {
       // A function to fetch files from github using the api 
@@ -175,14 +172,89 @@
       return data;
     }
     data = getgit("Crusher95574", "toolsearch", "tools.json");
-
-
-
   </script>
+   <script>
+    var icon = document.getElementById("icon");
+    var rasha = document.getElementById("hero-img");
+    icon.onclick = function () {
+      document.body.classList.toggle("light-theme");
+      if (document.body.classList.contains("light-theme")) {
+        icon.src = "moon.png";
+        rasha.src = "rashahackslight.jpg";
+      } else {
+        icon.src = "sunimage.png";
+        rasha.src = "rashahacks.jpg";
+      }
+    };
+  </script>
+
+  </body>
   <style>
+     .light-theme {
+      --heroText-color: black;
+    }
+    :root {
+      --heroText-color: white;
+    }
+    .index {
+      padding: 10rem 10rem;
+    }
+    .container {
+      max-width: auto;
+      margin: 0 auto;
+    }
+    .grid {
+      display: grid;
+      gap: 9rem;
+    }
+
+    .grid-two-column {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .section-hero {
+      background-color: var(--bg);
+    }
+
+    .section-hero-data {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .hero-top-data {
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 1.5rem;
+      color: var(--helper);
+    }
+    .hero-heading {
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 6rem;
+      margin-bottom: 1rem;
+      color: var(--heroText-color);
+    }
+    .hero-para {
+      margin-top: 0rem;
+      font-size: 1.5rem;
+      margin-bottom: 4rem;
+      max-width: 50rem;
+      color: var(--heroText-color);
+    }
+
+    .section-hero-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #hero-img {
+      max-width: 100%;
+      border-radius: 100%;
+    }
+    
     #search {
       width: 300px;
-      padding: 8px 6px;
+      padding:.5rem;
       margin-top: 5px;
       margin-left: 20px;
       border-radius: 20px;
@@ -197,13 +269,14 @@
       border: none;
       color: white;
 
-      padding: 7px 10px 8px 10px;
+      padding: .5rem;
       text-align: center;
       text-decoration: none;
       display: inline-block;
       font-size: 16px;
       border-radius: 10px;
       transition-duration: 0.4s;
+      margin-top: .5rem;
     }
 
     .button:hover {
@@ -215,16 +288,15 @@
       background-color: #626262;
       border: none;
       color: white;
-
-      padding: 7px 10px 8px 10px;
+      padding: .5rem;
       text-align: center;
       text-decoration: none;
       display: inline-block;
       font-size: 16px;
       border-radius: 10px;
       transition-duration: 0.4s;
-      margin-left: 10px;
-      margin-top: 5px;
+      margin-left: 1rem;
+      margin-top: .5rem;
     }
 
     .button2:hover {

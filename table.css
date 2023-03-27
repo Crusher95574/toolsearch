@@ -81,7 +81,6 @@ h1 {
     margin-bottom: 1rem;
 }
 .table_main{
-    position: fixed;
     min-height:10vh;
     display:flex;
     justify-content: center;
@@ -95,14 +94,14 @@ h1 {
     overflow: hidden;
     margin-left: 4.5rem;
     margin-right: 5rem;
-    margin-top: 4.2rem;
+    margin-top: -6rem;
     margin-bottom: 2.4rem;
     box-sizing: inherit;
 }
 
 .table_body{
     text-align: center;
-    position: fixed;
+    position:relative;
     width:98%;
     max-height: 89%;
     background-color: #fffb;

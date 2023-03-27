@@ -1,195 +1,377 @@
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tool Search</title>
-    <link rel="icon" href="fav.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="table.css" />
-  </head>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="reconnaissance.html">Reconnaissance</a></li>
-      <li><a href="api.html">Api</a></li>
-      <li><a href="network.html">Network</a></li>
-      <li><a href="ctf.html">CTF</a></li>
-      <li><a href="forensic.html">Forensic</a></li>
-      <li><a href="webExploit.html">Web Exploit</a></li>
-      <li><a href="reverseEngineering.html">Reverse Engineering</a></li>
-      <li><a href="osint.html">OSINT</a></li>
-      <li><img id="icon" src="sunimage.png" href="" /></li>
-    </ul>
-  </nav>
-  <body>
-    <div class="reverseEngineering section-hero">
-      <div class="container grid grid-two-column">
-        <div class="section-hero-data">
-          <!--<p class="hero-top-data">this is me</p>-->
-          <h1 class="hero-heading">Reverse Engineering</h1>
-          <p class="hero-para">These are the tools for Reverse Engineering</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tool Search</title>
+  <link rel="icon" href="fav.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="table.css" />
+  <script type="text/javascript">
+    async function getgit(owner, repo, path) {
+      // A function to fetch files from github using the api 
+      let data = await fetch(
+        `https://api.github.com/repos/${owner}/${repo}/contents/${path}`
+      )
+        .then(d => d.json())
+        .then(d =>
+          fetch(
+            `https://api.github.com/repos/${owner}/${repo}/git/blobs/${d.sha}`
+          )
+        )
+        .then(d => d.json())
+        .then(d => JSON.parse(atob(d.content)));
+      var result = [];
+      for (items in data.tools) {
+        if (data.tools[items].type == "reverse_engineering")
+          result.push(data.tools[items])
+      }
+      console.log(result);
+      document.getElementById("card").innerHTML = result.map((items) =>
+        `
+          <div class="card">
+          <div class="content">        
+          <h3>${items.name}</h3>
+          <p>${items.description}</p>
+          <p>${items.stars}⭐</p>
+          <a target="_blank" href="${items.url}">link</a>
+          <p>${items.language}</p>
+          </div>
         </div>
-        <div class="section-hero-image">
-          <img
-            src="yellow1.png"
-            class="hero-img"
-            alt="..."
-          />
+          `).join("");
+
+      return data;
+    }
+    data = getgit("Crusher95574", "toolsearch", "tools.json");
+
+  </script>
+</head>
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="reconnaissance.html">Reconnaissance</a></li>
+    <li><a href="api.html">Api</a></li>
+    <li><a href="network.html">Network</a></li>
+    <li><a href="ctf.html">CTF</a></li>
+    <li><a href="forensic.html">Forensic</a></li>
+    <li><a href="webExploit.html">Web Exploit</a></li>
+    <li><a href="reverseEngineering.html">Reverse Engineering</a></li>
+    <li><a href="osint.html">OSINT</a></li>
+    <li><img id="icon" src="sunimage.png" href="" /></li>
+    <li>
+      <form id="myForm" autocomplete="off">
+        <div>
+          <input type="text" id="search" placeholder="Search for any hacking tool" required>
+          <button class="button">Search</button>
         </div>
+      </form>
+      <div id="result"></div>
+    </li>
+    <li>
+      <button class="button2">Donate</button>
+    </li>
+  </ul>
+</nav>
+
+<body>
+  <div class="reverseEngineering section-hero">
+    <div class="container grid grid-two-column">
+      <div class="section-hero-data">
+        <!--<p class="hero-top-data">this is me</p>-->
+        <h1 class="hero-heading">Reverse Engineering</h1>
+        <p class="hero-para">Analyze the product for security vulnerabilities.The
+          process involves deconstructing the product or system, examining its components, and using various tools and
+          techniques to understand how they work together.</p>
+        <form id="myForm2" autocomplete="off">
+          <div>
+            <input type="text" id="search2" placeholder="Search for tools in reverse engineering" required>
+
+            <button class="button">Search</button>
+          </div>
+        </form>
+        <div id="result"></div>
+      </div>
+      <div class="section-hero-image">
+        <img src="heroImg.png" class="hero-img" alt="..." />
       </div>
     </div>
+  </div>
 
-    <div class="card-container">
-      <div class="card">
-        <div class="content">
-          <h3>Httpx</h3>
-          <p>
-            Fast and multi-purpose HTTP toolkit that allows running multiple
-            probes using the retryablehttp library
-          </p>
-          <p>4.6k ⭐</p>
-          <a href="https://github.com/projectdiscovery/httpx"></a>
-          <p>Language: Go</p>
-        </div>
-      </div>
+  <div id="card" class="card-container">
 
-      <div class="card">
-        <div class="content">
-          <h3>Httpx</h3>
-          <p>
-            Fast and multi-purpose HTTP toolkit that allows running multiple
-            probes using the retryablehttp library
-          </p>
-          <p>4.6k ⭐</p>
-          <a href="https://github.com/projectdiscovery/httpx"></a>
-          <p>Language: Go</p>
-          tags: yes,no
-        </div>
-      </div>
-      <div class="card">
-        <div class="content">
-          <h3>Httpx</h3>
-          <p>
-            Fast and multi-purpose HTTP toolkit that allows running multiple
-            probes using the retryablehttp library
-          </p>
-          <p>4.6k ⭐</p>
-          <a href="https://github.com/projectdiscovery/httpx"></a>
-          <p>Language: Go</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="content">
-          <h3>Httpx</h3>
-          <p>
-            Fast and multi-purpose HTTP toolkit that allows running multiple
-            probes using the retryablehttp library
-          </p>
-          <p>4.6k ⭐</p>
-          <a href="https://github.com/projectdiscovery/httpx"></a>
-          <p>Language: Go</p>
-        </div>
-      </div>
+  </div>
+  <script>
+    var icon = document.getElementById("icon");
+    icon.onclick = function () {
+      document.body.classList.toggle("light-theme");
+      if (document.body.classList.contains("light-theme")) {
+        icon.src = "moon.png";
+      } else {
+        icon.src = "sunimage.png";
+      }
+    };
+  </script>
+  <script type="text/javascript">
+    async function getgit(owner, repo, path) {
+      // A function to fetch files from github using the api 
+      let data = await fetch(
+        `https://api.github.com/repos/${owner}/${repo}/contents/${path}`
+      )
+        .then(d => d.json())
+        .then(d =>
+          fetch(
+            `https://api.github.com/repos/${owner}/${repo}/git/blobs/${d.sha}`
+          )
+        )
+        .then(d => d.json())
+        .then(d => JSON.parse(atob(d.content)));
 
-      <div class="card">
-        <div class="content">
-          <h3>Httpx</h3>
-          <p>
-            Fast and multi-purpose HTTP toolkit that allows running multiple
-            probes using the retryablehttp library
-          </p>
-          <p>4.6k ⭐</p>
-          <a href="https://github.com/projectdiscovery/httpx"></a>
-          <p>Language: Go</p>
-          tags: yes,no
+      var form = document.getElementById('myForm');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        search = document.getElementById('search').value.toUpperCase();
+        console.log(search);
+        f = 0
+        var result = [];
+        for (items in data.tools) {
+          if (data.tools[items].name === search) {
+            result.push(data.tools[items])
+            f += 1;
+            console.log(result);
+          }
+          document.getElementById("card").innerHTML = result.map((items) =>
+            `
+          <div class="card">
+          <div class="content">        
+          <h3>${items.name}</h3>
+          <p>${items.description}</p>
+          <p>${items.stars}⭐</p>
+          <a target="_blank" href="${items.url}">link</a>
+          <p>Language:${items.language}</p>
+          </div>
         </div>
-      </div>
-      <div class="card">
-        <div class="content">
-          <h3>Httpx</h3>
-          <p>
-            Fast and multi-purpose HTTP toolkit that allows running multiple
-            probes using the retryablehttp library
-          </p>
-          <p>4.6k ⭐</p>
-          <a href="https://github.com/projectdiscovery/httpx"></a>
-          <p>Language: Go</p>
-        </div>
-      </div>
-    </div>
-    <script>
-      var icon = document.getElementById("icon");
-      icon.onclick = function () {
-        document.body.classList.toggle("light-theme");
-        if (document.body.classList.contains("light-theme")) {
-          icon.src = "moon.png";
-        } else {
-          icon.src = "sunimage.png";
+          `).join("");
+
         }
-      };
-    </script>
-  </body>
-  <style>
-    .light-theme {
-      --heroText-color: black;
-    }
-    :root {
-      --heroText-color: white;
-    }
-    .reverseEngineering {
-      padding: 5rem 10rem;
-    }
-    .container {
-      max-width: 180rem;
-      margin: 0 auto;
-    }
-    .grid {
-      display: grid;
-      gap: 9rem;
-    }
+        if (f == 0) {
+          fetch("https://api.github.com/search/repositories?q={" + search + "}{&page,per_page,sort,order")
+            .then((result) => result.json())
+            .then((data) => {
+              console.log(data);
 
-    .grid-two-column {
-      grid-template-columns: repeat(2, 1fr);
-    }
+              k = data.items[0].full_name
+              document.getElementById("result").innerHTML = `
+              <a href="https://github.com/${k}">${k}</a>)
+              `
+            })
+        }
+      })
 
-    .section-hero {
-      background-color: var(--bg);
+      return data;
     }
+    data = getgit("Crusher95574", "toolsearch", "tools.json");
 
-    .section-hero-data {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-    .hero-top-data {
-      text-transform: uppercase;
-      font-weight: 500;
-      font-size: 1.5rem;
-      color: var(--helper);
-    }
-    .hero-heading {
-      text-transform: uppercase;
-      font-weight: 700;
-      font-size: 5rem;
-      margin-bottom: 1rem;
-      color: var(--heroText-color);
-    }
-    .hero-para {
-      margin-top: 0rem;
-      margin-bottom: 3rem;
-      font-size: 1.5rem;
-      max-width: 50rem;
-      color: var(--heroText-color);
-    }
 
-    .section-hero-image {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+
+  </script>
+  <script type="text/javascript">
+    async function getgit(owner, repo, path) {
+      // A function to fetch files from github using the api 
+      let data = await fetch(
+        `https://api.github.com/repos/${owner}/${repo}/contents/${path}`
+      )
+        .then(d => d.json())
+        .then(d =>
+          fetch(
+            `https://api.github.com/repos/${owner}/${repo}/git/blobs/${d.sha}`
+          )
+        )
+        .then(d => d.json())
+        .then(d => JSON.parse(atob(d.content)));
+
+      var form = document.getElementById('myForm2');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        search = document.getElementById('search2').value.toUpperCase();
+        console.log(search);
+        f = 0
+        var result = [];
+        for (items in data.tools) {
+          if (data.tools[items].name === search && data.tools[items].type === 'reverse_engineering') {
+            result.push(data.tools[items])
+            f += 1;
+            console.log(result);
+          }
+          document.getElementById("card").innerHTML = result.map((items) =>
+            `
+          <div class="card">
+          <div class="content">        
+          <h3>${items.name}</h3>
+          <p>${items.description}</p>
+          <p>${items.stars}⭐</p>
+          <a target="_blank" href="${items.url}">link</a>
+          <p>${items.language}</p>
+          </div>
+        </div>
+          `).join("");
+
+        }
+        if (f == 0) {
+          fetch("https://api.github.com/search/repositories?q={" + search + "}{&page,per_page,sort,order")
+            .then((result) => result.json())
+            .then((data) => {
+              console.log(data);
+
+              k = data.items[0].full_name
+              document.getElementById("result").innerHTML = `
+              <a target="_blank" href="https://github.com/${k}">${k}</a>)
+              `
+            })
+        }
+      })
+
+      return data;
     }
-    .hero-img {
-      max-width: 110%;
-    }
-  </style>
+    data = getgit("Crusher95574", "toolsearch", "tools.json");
+
+
+
+  </script>
+</body>
+<style>
+  .light-theme {
+    --heroText-color: black;
+  }
+
+  :root {
+    --heroText-color: white;
+  }
+
+  .reverseEngineering {
+    padding: 5rem 10rem;
+  }
+
+  .container {
+    max-width: 180rem;
+    margin: 0 auto;
+  }
+
+  .grid {
+    display: grid;
+    gap: 9rem;
+  }
+
+  .grid-two-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-hero {
+    background-color: var(--bg);
+  }
+
+  .section-hero-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-top-data {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--helper);
+  }
+
+  .hero-heading {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    color: var(--heroText-color);
+  }
+
+  .hero-para {
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    max-width: 50rem;
+    color: var(--heroText-color);
+  }
+
+  .section-hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-img {
+    max-width: 110%;
+  }
+
+  #search {
+    width: 300px;
+    padding: 8px 6px;
+    margin-top: 5px;
+    margin-left: 20px;
+    border-radius: 20px;
+  }
+
+  #search:focus {
+    border: white;
+  }
+
+  #search2 {
+    width: 300px;
+    padding: 8px 6px;
+    margin-top: 5px;
+    margin-left: 20px;
+    border-radius: 20px;
+  }
+
+  #search2:focus {
+    border: white;
+  }
+
+  .button {
+    background-color: #626262;
+    border: none;
+    color: white;
+
+    padding: 7px 10px 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+  }
+
+  .button:hover {
+    background-color: #d6d6d6;
+    color: black;
+  }
+
+  .button2 {
+    background-color: #626262;
+    border: none;
+    color: white;
+
+    padding: 7px 10px 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+
+  .button2:hover {
+    background-color: #d6d6d6;
+    color: black;
+  }
+</style>
+
 </html>

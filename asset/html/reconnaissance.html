@@ -1,0 +1,80 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tool Search</title>
+  <link rel="icon" href="../image/fav.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/table.css" />
+  <script type="module" src="../js/reconnaissance.js">
+  </script>
+</head>
+<nav>
+  <ul>
+    <li><a href="../../index.html">Home</a></li>
+    <li><a href="./reconnaissance.html">Reconnaissance</a></li>
+    <li><a href="./api.html">Api</a></li>
+    <li><a href="./network.html">Network</a></li>
+    <li><a href="./ctf.html">CTF</a></li>
+    <li><a href="./forensic.html">Forensic</a></li>
+    <li><a href="./webExploit.html">Web Exploit</a></li>
+    <li><a href="./reverseEngineering.html">Reverse Engineering</a></li>
+    <li><a href="./osint.html">OSINT</a></li>
+    <li><img id="icon" src="../image/moon.png"></li>
+    <li>
+      <form id="myForm" autocomplete="off">
+        <div>
+          <input type="text" id="search" placeholder="Search for any hacking tool" required>
+          <button class="button">Search</button>
+        </div>
+      </form>
+      <div id="result"></div>
+    </li>
+    <a target="_blank" href="https://github.com/rashahacks/toolsearch">
+      <div id="link"><img src="../image/GitHub_Logo_White.png" width="85rem"></div>
+    </a>
+  </ul>
+</nav>
+
+<body>
+  <div class="Reconnaissance section-hero">
+    <div class="container grid grid-two-column">
+      <div class="section-hero-data">
+        <!--<p class="hero-top-data">this is me</p>-->
+        <h1 data-value="Reconnaissance" class="hero-heading">Reconnaissance</h1>
+        <p class="hero-para">These tools gather information about a target, such as a network or system, in order to
+          assess its security posture and identify potential vulnerabilities</p>
+        <form id="myForm2" autocomplete="off">
+          <div>
+            <input type="text" id="search2" placeholder="Search for tools in reconnaissance" required>
+
+            <button class="button">Search</button>
+          </div>
+        </form>
+        <div id="result"></div>
+      </div>
+      <div class="section-hero-image">
+        <video autoplay loop width="500rem">
+          <source id="hero-img" src="../image/rashahacksanimation.mp4" />
+        </video>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="card" class="card-container">
+
+  </div>
+
+  <script type="module" src="../js/search.js">
+  </script>
+  <script type="module" src="../js/reconnaissance_search.js">
+  </script>
+  <script type="module" src="../js/hero.js"></script>
+  <script type="module" src="../js/mode.js"></script>
+</body>
+
+
+</html>

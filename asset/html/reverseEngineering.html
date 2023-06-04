@@ -1,0 +1,84 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tool Search</title>
+  <link rel="icon" href="../image/fav.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/table.css" />
+  <script type="module" src="../js/reverseengineering.js">
+  </script>
+</head>
+<nav>
+  <ul>
+    <li><a href="../../index.html">Home</a></li>
+    <li><a href="./reconnaissance.html">Reconnaissance</a></li>
+    <li><a href="./api.html">Api</a></li>
+    <li><a href="./network.html">Network</a></li>
+    <li><a href="./ctf.html">CTF</a></li>
+    <li><a href="./forensic.html">Forensic</a></li>
+    <li><a href="./webExploit.html">Web Exploit</a></li>
+    <li><a href="./reverseEngineering.html">Reverse Engineering</a></li>
+    <li><a href="./osint.html">OSINT</a></li>
+    <li><img id="icon" src="../image/moon.png"></li>
+    <li>
+      <form id="myForm" autocomplete="off">
+        <div>
+          <input type="text" id="search" placeholder="Search for any hacking tool" required>
+          <button class="button">Search</button>
+        </div>
+      </form>
+      <div id="result"></div>
+    </li>
+    <a target="_blank" href="https://github.com/rashahacks/toolsearch">
+      <div id="link"><img src="../image/GitHub_Logo_White.png" width="85rem"></div>
+    </a>
+  </ul>
+</nav>
+
+<body>
+  <div class="reverseEngineering section-hero">
+    <div class="container grid grid-two-column">
+      <div class="section-hero-data">
+        <!--<p class="hero-top-data">this is me</p>-->
+        <h1 data-value="Reverse Engineering" class="hero-heading">Reverse<br>Engineering</h1>
+        <p class="hero-para">Analyze the product for security vulnerabilities.The
+          process involves deconstructing the product or system, examining its components, and using various tools and
+          techniques to understand how they work together.</p>
+        <form id="myForm2" autocomplete="off">
+          <div>
+            <input type="text" id="search2" placeholder="Search for tools in reverse engineering" required>
+
+            <button class="button">Search</button>
+          </div>
+        </form>
+        <div id="result"></div>
+      </div>
+      <div class="section-hero-image">
+        <video autoplay loop width="500rem">
+          <source id="hero-img" src="../image/rashahacksanimation.mp4" />
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <div id="card" class="card-container">
+
+  </div>
+
+  <script type="module" src="../js/search.js">
+  </script>
+  <script type="module" src="../js/reverseengineering_search.js">
+  </script>
+  <script type="module" src="../js/hero.js"></script>
+  <script type="module" src="../js/mode.js"></script>
+</body>
+<style>
+  .section-hero-data {
+    max-width: 500px;
+  }
+</style>
+
+</html>

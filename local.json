@@ -1,0 +1,213 @@
+{
+      "tools": [
+            {
+                  "type": "reconnaissance",
+                  "owner": "projectdiscovery",
+                  "repo": "subfinder",
+                  "url": "https://github.com/projectdiscovery/subfinder",
+                  "description": "Fast passive subdomain enumeration tool.",
+                  "name": "subfinder",
+                  "language": "Go",
+                  "stargazers_count": 7633,
+                  "updated_at": "2023-05-30T16:44:13Z"
+            },
+            {
+                  "type": "reconnaissance",
+                  "owner": "projectdiscovery",
+                  "repo": "httpx",
+                  "url": "https://github.com/projectdiscovery/httpx",
+                  "description": "httpx is a fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library.",
+                  "name": "httpx",
+                  "language": "Go",
+                  "stargazers_count": 5187,
+                  "updated_at": "2023-05-30T19:23:56Z"
+            },
+            {
+                  "type": "reconnaissance",
+                  "owner": "OWASP",
+                  "repo": "amass",
+                  "url": "https://github.com/OWASP/Amass",
+                  "description": "In-depth attack surface mapping and asset discovery",
+                  "name": "amass",
+                  "language": "Go",
+                  "stargazers_count": 9405,
+                  "updated_at": "2023-05-30T19:18:03Z"
+            },
+            {
+                  "type": "network",
+                  "owner": "tomnomnom",
+                  "repo": "httprobe",
+                  "url": "https://github.com/tomnomnom/httprobe",
+                  "description": "Take a list of domains and probe for working HTTP and HTTPS servers",
+                  "name": "httprobe",
+                  "language": "Go",
+                  "stargazers_count": 2455,
+                  "updated_at": "2023-05-30T16:42:55Z"
+            },
+            {
+                  "type": "network",
+                  "owner": "projectdiscovery",
+                  "repo": "dnsx",
+                  "url": "https://github.com/projectdiscovery/dnsx",
+                  "description": "dnsx is a fast and multi-purpose DNS toolkit allow to run multiple DNS queries of your choice with a list of user-supplied resolvers.",
+                  "name": "dnsx",
+                  "language": "Go",
+                  "stargazers_count": 1577,
+                  "updated_at": "2023-05-30T19:40:51Z"
+            },
+            {
+                  "type": "api",
+                  "owner": "incogbyte",
+                  "repo": "shosubgo",
+                  "url": "https://github.com/incogbyte/shosubgo",
+                  "description": "Small tool to Grab subdomains using Shodan api.",
+                  "name": "shosubgo",
+                  "language": "Go",
+                  "stargazers_count": 128,
+                  "updated_at": "2023-05-08T04:57:46Z"
+            },
+            {
+                  "type": "web_exploit",
+                  "owner": "ffuf",
+                  "repo": "ffuf",
+                  "url": "https://github.com/ffuf/ffuf",
+                  "description": "Fast web fuzzer written in Go",
+                  "name": "ffuf",
+                  "language": "Go",
+                  "stargazers_count": 9405,
+                  "updated_at": "2023-05-30T19:12:06Z"
+            },
+            {
+                  "type": "network",
+                  "owner": "nmap",
+                  "repo": "nmap",
+                  "url": "https://github.com/nmap/nmap",
+                  "description": "Nmap - the Network Mapper. Github mirror of official SVN repository.",
+                  "name": "nmap",
+                  "language": "C",
+                  "stargazers_count": 7801,
+                  "updated_at": "2023-05-30T19:35:39Z"
+            },
+            {
+                  "type": "network",
+                  "owner": "projectdiscovery",
+                  "repo": "naabu",
+                  "url": "https://github.com/projectdiscovery/naabu",
+                  "description": "A fast port scanner written in go with a focus on reliability and simplicity. Designed to be used in combination with other tools for attack surface discovery in bug bounties and pentests",
+                  "name": "naabu",
+                  "language": "Go",
+                  "stargazers_count": 3366,
+                  "updated_at": "2023-05-30T19:35:48Z"
+            },
+            {
+                  "type": "network",
+                  "owner": "robertdavidgraham",
+                  "repo": "masscan",
+                  "url": "https://github.com/robertdavidgraham/masscan",
+                  "description": "TCP port scanner, spews SYN packets asynchronously, scanning entire Internet in under 5 minutes.",
+                  "name": "masscan",
+                  "language": "C",
+                  "stargazers_count": 21082,
+                  "updated_at": "2023-05-30T19:44:48Z"
+            },
+            {
+                  "type": "web_exploit",
+                  "owner": "projectdiscovery",
+                  "repo": "nuclei",
+                  "url": "https://github.com/projectdiscovery/nuclei",
+                  "description": "Fast and customizable vulnerability scanner based on simple YAML based DSL.",
+                  "name": "nuclei",
+                  "language": "Go",
+                  "stargazers_count": 13107,
+                  "updated_at": "2023-05-30T19:35:50Z"
+            },
+            {
+                  "type": "web_exploit",
+                  "owner": "SNGWN",
+                  "repo": "burp-suite",
+                  "url": "https://github.com/SNGWN/Burp-Suite",
+                  "description": "|| Activate Burp Suite Pro with Key-Generator and Key-Loader ||",
+                  "name": "Burp-Suite",
+                  "language": "PowerShell",
+                  "stargazers_count": 773,
+                  "updated_at": "2023-05-29T12:25:43Z"
+            },
+            {
+                  "type": "reverse_engineering",
+                  "owner": "skylot",
+                  "repo": "jadx",
+                  "url": "https://github.com/skylot/jadx",
+                  "description": "Dex to Java decompiler",
+                  "name": "jadx",
+                  "language": "Java",
+                  "stargazers_count": 34697,
+                  "updated_at": "2023-05-30T17:50:28Z"
+            },
+            {
+                  "type": "reverse_engineering",
+                  "owner": "NationalSecurityAgency",
+                  "repo": "ghidra",
+                  "url": "https://github.com/NationalSecurityAgency/ghidra",
+                  "description": "Ghidra is a software reverse engineering (SRE) framework",
+                  "name": "ghidra",
+                  "language": "Java",
+                  "stargazers_count": 39809,
+                  "updated_at": "2023-05-30T17:16:08Z"
+            },
+            {
+                  "type": "osint",
+                  "owner": "achillean",
+                  "repo": "shodan",
+                  "url": "https://github.com/achillean/shodan-python",
+                  "description": "The official Python library for Shodan",
+                  "name": "shodan-python",
+                  "language": "Python",
+                  "stargazers_count": 2173,
+                  "updated_at": "2023-05-29T21:18:25Z"
+            },
+            {
+                  "type": "osint",
+                  "owner": "smicallef",
+                  "repo": "spiderfoot",
+                  "url": "https://github.com/smicallef/spiderfoot",
+                  "description": "SpiderFoot automates OSINT for threat intelligence and mapping your attack surface.",
+                  "name": "spiderfoot",
+                  "language": "Python",
+                  "stargazers_count": 9682,
+                  "updated_at": "2023-05-30T19:22:21Z"
+            },
+            {
+                  "type": "osint",
+                  "owner": "MaltegoTech",
+                  "repo": "maltego",
+                  "url": "https://github.com/MaltegoTech/maltego-trx",
+                  "description": "Maltego Transform library for Python",
+                  "name": "maltego-trx",
+                  "language": "Python",
+                  "stargazers_count": 162,
+                  "updated_at": "2023-05-23T08:53:16Z"
+            },
+            {
+                  "type": "forensic",
+                  "owner": "sleuthkit",
+                  "repo": "autopsy",
+                  "url": "https://github.com/sleuthkit/autopsy",
+                  "description": "Autopsy\u00ae is a digital forensics platform and graphical interface to The Sleuth Kit\u00ae and other digital forensics tools. It can be used by law enforcement, military, and corporate examiners to investigate what happened on a computer. You can even use it to recover photos from your camera's memory card. ",
+                  "name": "autopsy",
+                  "language": "Java",
+                  "stargazers_count": 1922,
+                  "updated_at": "2023-05-29T17:44:24Z"
+            },
+            {
+                  "type": "web_exploit",
+                  "owner": "fuzzdb-project",
+                  "repo": "fuzzdb",
+                  "url": "https://github.com/fuzzdb-project/fuzzdb",
+                  "description": "Dictionary of attack patterns and primitives for black-box application fault injection and resource discovery.",
+                  "name": "fuzzdb",
+                  "language": "PHP",
+                  "stargazers_count": 7438,
+                  "updated_at": "2023-05-30T12:34:18Z"
+            }
+      ]
+}

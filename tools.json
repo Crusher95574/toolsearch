@@ -1,326 +1,118 @@
 {
     "tools": [
         {
-            "type":"reconnaissance",
-            "name": "SUBFINDER",
-            "description": "Fast passive subdomain enumeration tool",
-            "language": "Go",
-            "stars": "7.2k",
-            "url": "https://github.com/projectdiscovery/subfinder",
-            "last_updated":"18-03-23",
-            "tags": [
-                "osint",
-                "hacking",
-                "bug bounty",
-                "subdomains",
-                "reconnaissance",
-                "subdomain enumeration"
-            ]
+            "type": "reconnaissance",
+            "owner": "projectdiscovery",
+            "repo": "subfinder",
+            "url": "https://github.com/projectdiscovery/subfinder"
         },
         {
-            "type":"reconnaissance",
-            "name": "HTTPX",
-            "description": "Fast and multi-purpose HTTP toolkit that allows running multiple probes using the retryablehttp library",
-            "language": "Go",
-            "stars": "4.6k",
-            "url": "https://github.com/projectdiscovery/httpx",
-            "last_updated": "15-03-23",
-            "tags": [
-                "osint",
-                "cli",
-                "http",
-                "pipeline",
-                "lib",
-                "pentest-tool",
-                "bugbounty",
-                "cybersecurity"
-            ]
+            "type": "reconnaissance",
+            "owner": "projectdiscovery",
+            "repo": "httpx",
+            "url": "https://github.com/projectdiscovery/httpx"
         },
         {
-            "type":"reconnaissance",
-            "name": "AMASS",
-            "description": "In-depth Attack Surface Mapping and Asset Discovery",
-            "language": "Go,Lua",
-            "stars": "9k",
-            "url": "https://github.com/OWASP/Amass",
-            "last_updated": "14-03-23",
-            "tags": [
-                "osint",
-                "subdomain",
-                "owasp",
-                "dns",
-                "maltego",
-                "recon",
-                "attack-surfaces",
-                "enumeration"
-            ]
+            "type": "reconnaissance",
+            "owner": "OWASP",
+            "repo": "amass",
+            "url": "https://github.com/OWASP/Amass"
         },
         {
-            "type":"network",
-            "name": "HTTPROBE",
-            "description": "Take a list of domains and probe for working HTTP and HTTPS servers",
-            "language": "Go,Shell,DockerFile",
-            "stars": "2.4k",
-            "url": "https://github.com/tomnomnom/httprobe",
-            "last_updated": "09-06-22",
-            "tags": [
-               
-            ]
+            "type": "network",
+            "owner": "tomnomnom",
+            "repo": "httprobe",
+            "url": "https://github.com/tomnomnom/httprobe"
         },
         {
-            "type":"network",
-            "name": "DNSX",
-            "description": "dnsx is a fast and multi-purpose DNS toolkit allow to run multiple DNS queries of your choice with a list of user-supplied resolvers.",
-            "language": "Go,Shell",
-            "stars": "1.4k",
-            "url": "https://github.com/projectdiscovery/dnsx",
-            "last_updated": "17-03-23",
-            "tags": [
-                "cli",
-                "dns-client",
-                "dns-bruteforce",
-                "dns-records",
-                "wildcard-filtering",
-                "dns-resolution",
-                "hacktoberfest"
-            ]
+            "type": "network",
+            "owner": "projectdiscovery",
+            "repo": "dnsx",
+            "url": "https://github.com/projectdiscovery/dnsx"
         },
         {
-            "type":"api",
-            "name": "SHOSUBGO",
-            "description": "Small tool to Grab subdomains using Shodan api ",
-            "language": "Go",
-            "stars": "115",
-            "url": "https://github.com/incogbyte/shosubgo",
-            "last_updated": "21-04-21",
-            "tags": [
-                "golang",
-                "shodan",
-                "shodan-api",
-                "grab-subdomains"
-            ]
+            "type": "api",
+            "owner": "incogbyte",
+            "repo": "shosubgo",
+            "url": "https://github.com/incogbyte/shosubgo"
         },
         {
-            "type":"web_exploit",
-            "name": "FFUF",
-            "description": "ffuf scans against a live host with different lessons and use cases ",
-            "language": "Go",
-            "stars": "9k",
-            "url": "https://github.com/ffuf/ffuf",
-            "last_updated": "06-02-23",
-            "tags": [
-                "web",
-                "infosec",
-                "pentesting",
-                "fuzzer"
-            ]
+            "type": "web_exploit",
+            "owner": "ffuf",
+            "repo": "ffuf",
+            "url": "https://github.com/ffuf/ffuf"
         },
         {
-            "type":"web_exploit",
-            "name": "DIRB",
-            "description": "DIRB  IS  a  Web Content Scanner. It looks for existing (and/or hidden)    Web Objects. It basically works by launching a dictionary basesd attack against a web server and analizing the response.  ",
-            "language": "",
-            "stars": "",
-            "url": "https://www.kali.org/tools/dirb/",
-            "last_updated": "",
-            "tags": [
-                
-            ]
+            "type": "network",
+            "owner": "nmap",
+            "repo": "nmap",
+            "url": "https://github.com/nmap/nmap"
         },
         {
-            "type":"network",
-            "name": "NMAP",
-            "description": "Nmap - the Network Mapper. Github mirror of official SVN repository ",
-            "language": "C,Lua,C++,Python",
-            "stars": "7.5k",
-            "url": "https://github.com/nmap/nmap",
-            "last_updated": "",
-            "tags": [
-                "c-plus-plus",
-                "service-discovery",
-                "nmap",
-                "ping",
-                "port-scanner",
-                "libcap",
-                "network-discovery",
-                "netcat",
-                "pcre"
-            ]
+            "type": "network",
+            "owner": "projectdiscovery",
+            "repo": "naabu",
+            "url": "https://github.com/projectdiscovery/naabu"
         },
         {
-            "type":"network",
-            "name": "NAABU",
-            "description": "A fast port scanner written in go with a focus on reliability and simplicity. Designed to be used in combination with other tools for attack surface discovery in bug bounties and pentests",
-            "language": "Go",
-            "stars": "3.1k",
-            "url": "https://github.com/projectdiscovery/naabu",
-            "last_updated": "19-03-23",
-            "tags": [
-                "post-enumeration",
-                "nmap",
-                "port-scanner",
-                "hacktoberfest",
-                "ncd-exclusion"
-            ]
+            "type": "network",
+            "owner": "robertdavidgraham",
+            "repo": "masscan",
+            "url": "https://github.com/robertdavidgraham/masscan"
         },
         {
-            "type":"network",
-            "name": "MASSCAN",
-            "description": "TCP port scanner, spews SYN packets asynchronously, scanning entire Internet in under 5 minutes",
-            "language": "C,Makefile",
-            "stars": "20.8k",
-            "url": "https://github.com/robertdavidgraham/masscan",
-            "last_updated": "31-01-21",
-            "tags": [
-            ]
+            "type": "web_exploit",
+            "owner": "projectdiscovery",
+            "repo": "nuclei",
+            "url": "https://github.com/projectdiscovery/nuclei"
         },
         {
-            "type":"web_exploit",
-            "name": "NUCLEI",
-            "description": "Fast and customizable vulnerability scanner based on simple YAML based DSL",
-            "language": "Go",
-            "stars": "12.1k",
-            "url": "https://github.com/projectdiscovery/nuclei",
-            "last_updated": "17-03-23",
-            "tags": [
-                "security",
-                "vulnerability-detection",
-                "security-scanner",
-                "vulnerability-assesment",
-                "nuclei-engine",
-                " subdomain-takeover"
-            ]
+            "type": "web_exploit",
+            "owner": "SNGWN",
+            "repo": "burp-suite",
+            "url": "https://github.com/SNGWN/Burp-Suite"
         },
         {
-            "type":"web_exploit",
-            "name": "BURPSUITE",
-            "description": "Activate Burp Suite Pro with Key-Generator and Key-Loader",
-            "language": "PowerShell,Shell",
-            "stars": "625",
-            "url": "https://github.com/SNGWN/Burp-Suite",
-            "last_updated": "05-06-22",
-            "tags": [
-                "burpsuite",
-                "pentest-tool",
-                "security-tools",
-                "mobile-application-security-testing",
-                "application-security"
-            ]
+            "type": "reverse_engineering",
+            "owner": "skylot",
+            "repo": "jadx",
+            "url": "https://github.com/skylot/jadx"
         },
         {
-            "type":"api",
-            "name": "AR06",
-            "description": "HTTP parameter discovery suite",
-            "language": "Python",
-            "stars": "4k",
-            "url": "https://github.com/s0md3v/Ar06",
-            "last_updated": "11-09-22",
-            "tags": [
-                "recon",
-                "api-testing",
-                "api-fuzzer",
-                "api-fuzzing",
-                "parameter-discovery"
-            ]
+            "type": "reverse_engineering",
+            "owner": "NationalSecurityAgency",
+            "repo": "ghidra",
+            "url": "https://github.com/NationalSecurityAgency/ghidra"
         },
         {
-            "type":"reverse_engineering",
-            "name": "JADX",
-            "description": "Command line and GUI tools for producing Java source code from Android Dex and Apk files",
-            "language": "Java,Smali,Lex",
-            "stars": "33.8k",
-            "url": "https://github.com/skylot/jadx",
-            "last_updated": "11-02-23",
-            "tags": [
-                "android",
-                "java",
-                "decompiler",
-                "dex"
-            ]
+            "type": "osint",
+            "owner": "achillean",
+            "repo": "shodan",
+            "url": "https://github.com/achillean/shodan-python"
         },
         {
-            "type":"reverse_engineering",
-            "name": "GHIDRA",
-            "description": "Ghidra is a software reverse engineering (SRE) framework",
-            "language": "Java,C++,HTML",
-            "stars": "37.9k",
-            "url": "https://github.com/NationalSecurityAgency/ghidra",
-            "last_updated": "09-02-23",
-            "tags": [
-                "disassembler",
-                "reverse-engineering",
-                "software-analysis"
-            ]
+            "type": "osint",
+            "owner": "smicallef",
+            "repo": "spiderfoot",
+            "url": "https://github.com/smicallef/spiderfoot"
         },
         {
-            "type":"osint",
-            "name": "SHODAN",
-            "description": "Shodan is a search engine for Internet-connected devices. Google lets you search for websites, Shodan lets you search for devices. This library provides developers easy access to all of the data stored in Shodan in order to automate tasks and integrate into existing tools",
-            "language": "Python",
-            "stars": "2.1k",
-            "url": "https://github.com/achillean/shodan-python",
-            "last_updated": "10-07-22",
-            "tags": [
-                "shodan"
-            ]
+            "type": "osint",
+            "owner": "MaltegoTech",
+            "repo": "maltego",
+            "url": "https://github.com/MaltegoTech/maltego-trx"
         },
         {
-            "type":"osint",
-            "name": "SPIDERFOOT",
-            "description": "SpiderFoot automates OSINT for threat intelligence and mapping your attack surface",
-            "language": "Python,Javascript",
-            "stars": "9.3k",
-            "url": "https://github.com/smicallef/spiderfoot",
-            "last_updated": "07-04-22",
-            "tags": [
-                "osint",
-                "infosec",
-                "pentesting",
-                "footprinting",
-                "attack-surface",
-                "osint-reconnaissance",
-                "information-gathering"
-            ]
+            "type": "forensic",
+            "owner": "sleuthkit",
+            "repo": "autopsy",
+            "url": "https://github.com/sleuthkit/autopsy"
         },
         {
-            "type":"osint",
-            "name": "MALTEGO",
-            "description": "Maltego is a comprehensive tool for graphical link analyses that offers real-time data mining and information gathering",
-            "language": "Python,Dockerfile",
-            "stars": "",
-            "url": "https://github.com/MaltegoTech/maltego-trx",
-            "last_updated": "10-08-22",
-            "tags": [
-                "maltego",
-                "osint"
-            ]
-        },
-        {
-            "type":"forensic",
-            "name": "AUTOPSY",
-            "description": "Autopsy® is a digital forensics platform and graphical interface to The Sleuth Kit® and other digital forensics tools. It can be used by law enforcement, military, and corporate examiners to investigate what happened on a computer. You can even use it to recover photos from your camera's memory card",
-            "language": "Python,Java,HTML,Shell,CSS",
-            "stars": "1.9k",
-            "url": "https://github.com/sleuthkit/autopsy",
-            "last_updated": "25-01-23",
-            "tags": [
-                "java",
-                "forensics"
-            ]
-        },
-        {
-            "type":"web_exploit",
-            "name": "FUZZDB",
-            "description": "Dictionary of attack patterns and primitives for black-box application fault injection and resource discovery",
-            "language": "PHP,Java,Classic ASP,HTML,Perl",
-            "stars": "7.3k",
-            "url": "https://github.com/fuzzdb-project/fuzzdb",
-            "last_updated": "25-01-23",
-            "tags": [
-                "java",
-                "forensics"
-            ]
+            "type": "web_exploit",
+            "owner": "fuzzdb-project",
+            "repo": "fuzzdb",
+            "url": "https://github.com/fuzzdb-project/fuzzdb"
         }
-
     ]
 }

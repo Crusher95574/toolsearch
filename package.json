@@ -1,0 +1,26 @@
+{
+  "name": "toolsearch",
+  "version": "1.0.0",
+  "description": "hacking tools, cybersecurity tools and other software tools",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/rashahacks/toolsearch"
+  },
+  "keywords": [
+    "hacking",
+    "websecurity",
+    "cybersecurity"
+  ],
+  "author": "Tejas,Divay",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

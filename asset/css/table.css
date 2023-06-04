@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+}
+
+:root {
+    --primary-color: white;
+    --secondary-color: #333;
+
+    --table-main-color: #fffb;
+    --hover-color: black;
+}
+
+.dark-theme {
+    --primary-color: white;
+    --secondary-color: black;
+    --table-main-color: black;
+    --hover-color: #fff5;
+
+}
+
+
+#icon {
+    width: 30px;
+    position: relative;
+    margin-left: 1rem;
+    justify-content: right;
+    margin-top: .5rem;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+    ;
+}
+
+ul {
+    position: fixed;
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--secondary-color);
+    font-size: 1rem;
+    z-index: 100;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: var(--hover-color);
+}
+
+h1 {
+    color: var(--heading);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.table_header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+    padding: .8rem 1rem;
+    margin-top: 1rem;
+    margin-left: 20rem;
+    margin-right: 10rem;
+    margin-bottom: 1rem;
+}
+
+.table_main {
+    min-height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 93%;
+    height: 90%;
+    background-color: var(--table-main-color);
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+    overflow: hidden;
+    margin-left: 4.5rem;
+    margin-right: 5rem;
+    margin-top: -4rem;
+    margin-bottom: 2.4rem;
+    box-sizing: inherit;
+}
+
+.table_body {
+    text-align: center;
+    position: relative;
+    width: 98%;
+    max-height: 89%;
+    background-color: #fffb;
+    margin: .8rem auto;
+    border-radius: .6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    overflow: auto;
+    box-sizing: inherit;
+}
+
+.table_body::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.table_body::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+.table_body:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+.table_main {
+    width: 90%;
+    height: 90%;
+}
+
+table,
+th,
+td {
+    border-collapse: collapse;
+    padding: 1rem;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #0000000b;
+}
+
+tbody tr:hover {
+    background-color: #fff6;
+}

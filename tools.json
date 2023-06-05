@@ -31,13 +31,13 @@
             "url": "https://github.com/projectdiscovery/dnsx"
         },
         {
-            "type": "web_exploit",
+            "type": "web",
             "owner": "incogbyte",
             "repo": "shosubgo",
             "url": "https://github.com/incogbyte/shosubgo"
         },
         {
-            "type": "web_exploit",
+            "type": "web",
             "owner": "ffuf",
             "repo": "ffuf",
             "url": "https://github.com/ffuf/ffuf"
@@ -61,13 +61,13 @@
             "url": "https://github.com/robertdavidgraham/masscan"
         },
         {
-            "type": "web_exploit",
+            "type": "web",
             "owner": "projectdiscovery",
             "repo": "nuclei",
             "url": "https://github.com/projectdiscovery/nuclei"
         },
         {
-            "type": "web_exploit",
+            "type": "web",
             "owner": "SNGWN",
             "repo": "burp-suite",
             "url": "https://github.com/SNGWN/Burp-Suite"
@@ -109,7 +109,7 @@
             "url": "https://github.com/sleuthkit/autopsy"
         },
         {
-            "type": "web_exploit",
+            "type": "web",
             "owner": "fuzzdb-project",
             "repo": "fuzzdb",
             "url": "https://github.com/fuzzdb-project/fuzzdb"

@@ -56,7 +56,7 @@
                   "updated_at": "2023-05-30T19:40:51Z"
             },
             {
-                  "type": "web_exploit",
+                  "type": "web",
                   "owner": "incogbyte",
                   "repo": "shosubgo",
                   "url": "https://github.com/incogbyte/shosubgo",
@@ -67,7 +67,7 @@
                   "updated_at": "2023-05-08T04:57:46Z"
             },
             {
-                  "type": "web_exploit",
+                  "type": "web",
                   "owner": "ffuf",
                   "repo": "ffuf",
                   "url": "https://github.com/ffuf/ffuf",
@@ -111,7 +111,7 @@
                   "updated_at": "2023-05-30T19:44:48Z"
             },
             {
-                  "type": "web_exploit",
+                  "type": "web",
                   "owner": "projectdiscovery",
                   "repo": "nuclei",
                   "url": "https://github.com/projectdiscovery/nuclei",
@@ -122,7 +122,7 @@
                   "updated_at": "2023-05-30T19:35:50Z"
             },
             {
-                  "type": "web_exploit",
+                  "type": "web",
                   "owner": "SNGWN",
                   "repo": "burp-suite",
                   "url": "https://github.com/SNGWN/Burp-Suite",
@@ -199,7 +199,7 @@
                   "updated_at": "2023-05-29T17:44:24Z"
             },
             {
-                  "type": "web_exploit",
+                  "type": "web",
                   "owner": "fuzzdb-project",
                   "repo": "fuzzdb",
                   "url": "https://github.com/fuzzdb-project/fuzzdb",
